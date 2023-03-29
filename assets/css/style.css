@@ -70,8 +70,8 @@ a {
 }
 
 .cont{
-    color: rgb(14, 172, 172);
-    margin-left: 10%;
+   color: rgb(14, 172, 172);
+   margin-left: 10%;
 }
 
 #boton {
@@ -94,6 +94,15 @@ footer{
 .redes{
     color:slategrey;
     font-size: 30px;
+}
+
+.inicio{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,220px);
+    grid-template-areas: "img7 img7 img6 img9 video" "img7 img7 img2 img2 video" "img1 img3 img4 img5 img5" " img1 img8 img8 img5 img5" "img11 img8 img8 img10 img10";
 }
 
 .img{
@@ -171,15 +180,6 @@ footer{
     grid-area: video;
     width: 100%;
     height: 100%;
-}
-
-.incio{
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(5,220px);
-    grid-template-areas: "img7 img7 img6 img9 video" "img7 img7 img2 img2 video" "img1 img3 img4 img5 img5" " img1 img8 img8 img5 img5" "img11 img8 img8 img10 img10";
 }
 
 .grillacolores{
@@ -606,38 +606,4 @@ footer{
     grid-template-columns: 1fr 1fr 1fr 150px;
     grid-template-rows: repeat(3,400px);
     grid-template-areas: "pin1 pin3 pin7 filtro" "pin8 pin13 pin17 filtro" "pin19 pin28 pin29 filtro";
-}
-
-
-@media (min-width:768px){
-    .incio{
-        width: 100%;
-        height: auto;
-        display: grid;
-        grid-template-columns: repeat(5,1fr);
-        grid-template-rows: repeat(5,220px);
-        grid-template-areas: "img7 img7 img6 img9 video" "img7 img7 img2 img2 video" "img1 img3 img4 img5 img5" " img1 img8 img8 img5 img5" "img11 img8 img8 img10 img10";
-    }
-}
-
-@media (min-width:576px){
-    .inicio{
-        width: 100%;
-        height: auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(12,800px);
-        grid-template-areas: "video img1" "img2 img3" "img4 img5" "img6 img7" "img8 img9" "img10 img11";
-    }
-}
-
-@media (min-width:480px){
-    .inicio{
-        width: 100%;
-        height: auto;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(12,800px);
-        grid-template-areas: "video" "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9" "img10" "img11";
-    }
 }
