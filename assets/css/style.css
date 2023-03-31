@@ -316,6 +316,7 @@ color: black;
     background-position: center;
     border: 20px solid;
 }
+
 .pin1{
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.02.jpeg);
     width: 100%;
@@ -548,6 +549,7 @@ color: black;
 .vacio{
     width: 100%;
     grid-area: vacio;
+    border: none;
 }
 
 .urbanos{
@@ -639,6 +641,10 @@ color: black;
 .logomobile{
     display: flex;
     width: 120px;
+}
+
+.fa-light fa-bars{
+    color: black !important;
 }
 
     /* background-image: url("../img/bars.svg"); */
