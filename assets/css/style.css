@@ -311,39 +311,43 @@ color: black;
     grid-template-rows: repeat(10,400px);
     grid-template-areas: "pin1 pin2 pin3 filtro" "pin4 pin5 pin6 filtro" "pin7 pin8 pin9 filtro" "pin10 pin11 pin12  filtro" "pin13 pin14 pin15 filtro" "pin16 pin17 pin18 filtro" "pin19 pin20 pin21 filtro" "pin22 pin23 pin24 filtro" "pin25 pin26 pin27 filtro" "pin28 pin29 pin30 filtro";
 }
-
+.pin{
+    background-size: cover;
+    background-position: center;
+    border: 20px solid;
+}
 .pin1{
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.02.jpeg);
     width: 100%;
     grid-area: pin1;
-    border: 40px solid #C84C47 ;
+    border-color: #C84C47 ;
 }
 
 .pin2{
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.02\ \(1\).jpeg);
     width: 100%;
     grid-area: pin2;
-    border: 40px solid #5A4A6F;
+    border-color: #5A4A6F;
 }
 .pin3{
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.03.jpeg);
     width: 100%;
     grid-area: pin3;
-    border: 40px solid #9D6F74;
+    border-color: #9D6F74;
 
 }
 .pin4{
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.03\ \(1\).jpeg);
     width: 100%;
     grid-area: pin4;
-    border: 40px solid #64B2B9;
+    border-color: #64B2B9;
 
 }
 .pin5{
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.03\ \(2\).jpeg);
     width: 100%;
     grid-area: pin5;
-    border: 40px solid #6C3533;
+    border-color: #6C3533;
 
 
 }
@@ -351,49 +355,49 @@ color: black;
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10.jpeg);
     width: 100%;
     grid-area: pin6;
-    border: 40px solid #418777;
+    border-color:  #418777;
 
 }
 .pin7{
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10\ \(1\).jpeg);
     width: 100%;
     grid-area: pin7;
-    border: 40px solid #621A38;
+    border-color: #621A38;
 
 }
 .pin8{
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10\ \(2\).jpeg);
     width: 100%;
     grid-area: pin8;
-    border: 40px solid #A3A3A1;
+    border-color:  #A3A3A1;
 
 }
 .pin9{
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10\ \(3\).jpeg);
     width: 100%;
     grid-area: pin9;
-    border: 40px solid #E5CDA1;
+    border-color:  #E5CDA1;
 
 }
 .pin10{
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10\ \(4\).jpeg);
     width: 100%;
     grid-area: pin10;
-    border: 40px solid #33728E;
+    border-color:  #33728E;
 
 }
 .pin11{
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10\ \(5\).jpeg);
     width: 100%;
     grid-area: pin11;
-    border: 40px solid #F33103;
+    border-color: #F33103;
 
 }
 .pin12{
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10\ \(6\).jpeg);
     width: 100%;
     grid-area: pin12;
-    border: 40px solid #A6C177;
+    border-color:  #A6C177;
 
 
 }
@@ -401,7 +405,7 @@ color: black;
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11.jpeg);
     width: 100%;
     grid-area: pin13;
-    border: 40px solid #C69BA4;
+    border-color:  #C69BA4;
 
 
 }
@@ -409,7 +413,7 @@ color: black;
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(10\).jpeg);
     width: 100%;
     grid-area: pin14;
-    border: 40px solid #0CBAC3;
+    border-color:  #0CBAC3;
 
 
 }
@@ -417,7 +421,7 @@ color: black;
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(11\).jpeg);
     width: 100%;
     grid-area: pin15;
-    border: 40px solid #6D2421;
+    border-color:  #6D2421;
 
 
 }
@@ -425,7 +429,7 @@ color: black;
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(12\).jpeg);
     width: 100%;
     grid-area: pin16;
-    border: 40px solid #854898;
+    border-color:  #854898;
 
 
 }
@@ -433,7 +437,7 @@ color: black;
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(1\).jpeg);
     width: 100%;
     grid-area: pin17;
-    border: 40px solid #0E3459;
+    border-color:  #0E3459;
 
 
 }
@@ -441,7 +445,7 @@ color: black;
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(2\).jpeg);
     width: 100%;
     grid-area: pin18;
-    border: 40px solid #B8C2BA;
+    border-color:  #B8C2BA;
 
 
 }
@@ -449,7 +453,7 @@ color: black;
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(3\).jpeg);
     width: 100%;
     grid-area: pin19;
-    border: 40px solid #304357;
+    border-color:  #304357;
 
 
 }
@@ -457,7 +461,7 @@ color: black;
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(4\).jpeg);
     width: 100%;
     grid-area: pin20;
-    border: 40px solid #438E75;
+    border-color:  #438E75;
 
 
 }
@@ -465,7 +469,7 @@ color: black;
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(5\).jpeg);
     width: 100%;
     grid-area: pin21;
-    border: 40px solid #767489;
+    border-color:  #767489;
 
 
 }
@@ -473,7 +477,7 @@ color: black;
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(6\).jpeg);
     width: 100%;
     grid-area: pin22;
-    border: 40px solid #8CC2CE;
+    border-color:  #8CC2CE;
 
 
 }
@@ -481,7 +485,7 @@ color: black;
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(7\).jpeg);
     width: 100%;
     grid-area: pin23;
-    border: 40px solid #902422;
+    border-color:  #902422;
 
 
 }
@@ -489,7 +493,7 @@ color: black;
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(8\).jpeg);
     width: 100%;
     grid-area: pin24;
-    border: 40px solid #8E888C;
+    border-color:  #8E888C;
 
 
 }
@@ -497,7 +501,7 @@ color: black;
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(9\).jpeg);
     width: 100%;
     grid-area: pin25;
-    border: 40px solid #143460;
+    border-color:  #143460;
 
 
 }
@@ -505,7 +509,7 @@ color: black;
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.12.jpeg);
     width: 100%;
     grid-area: pin26;
-    border: 40px solid #871C28;
+    border-color:  #871C28;
 
 
 }
@@ -513,7 +517,7 @@ color: black;
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.12\ \(1\).jpeg);
     width: 100%;
     grid-area: pin27;
-    border: 40px solid #A4AD49;
+    border-color:  #A4AD49;
 
 
 }
@@ -521,7 +525,7 @@ color: black;
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.12\ \(2\).jpeg);
     width: 100%;
     grid-area: pin28;
-    border: 40px solid #9B4560;
+    border-color:  #9B4560;
 
 
 }
@@ -529,7 +533,7 @@ color: black;
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.12\ \(3\).jpeg);
     width: 100%;
     grid-area: pin29;
-    border: 40px solid #DFE0D8;
+    border-color: #DFE0D8;
 
 
 }
@@ -537,7 +541,7 @@ color: black;
     background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.12\ \(4\).jpeg);
     width: 100%;
     grid-area: pin30;
-    border: 40px solid #6AA2A1;
+    border-color: #6AA2A1;
 
 
 }
@@ -637,10 +641,8 @@ color: black;
     width: 120px;
 }
 
-.button{
-    display: flex;
     /* background-image: url("../img/bars.svg"); */
-}
+
 @media only screen and (max-width:1100px){
     .inicio{
         width: 100%;
@@ -660,6 +662,14 @@ color: black;
     }
     .flecha{
         left: 85%
+    }
+    .cuadros{
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 150px;
+        grid-template-rows: repeat(10,320px);
+        grid-template-areas: "pin1 pin2 pin3 filtro" "pin4 pin5 pin6 filtro" "pin7 pin8 pin9 filtro" "pin10 pin11 pin12  filtro" "pin13 pin14 pin15 filtro" "pin16 pin17 pin18 filtro" "pin19 pin20 pin21 filtro" "pin22 pin23 pin24 filtro" "pin25 pin26 pin27 filtro" "pin28 pin29 pin30 filtro";
     }
 }
 @media only screen and (max-width:768px){
@@ -683,6 +693,18 @@ color: black;
     .logoCentrado{
         display: none;
     }
+    .cuadros{
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(15,350px);
+        grid-template-areas: "pin1 pin2" "pin3 pin4" "pin5 pin6" "pin7 pin8" "pin9 pin10" "pin11 pin12"  "pin13 pin14" "pin15 pin16" "pin17 pin18" "pin19 pin20" "pin21 pin22" "pin23 pin24" "pin25 pin26" "pin27 pin28" "pin29 pin30";
+    }
+    .filtro{
+        display:none;
+        visibility: hidden;
+    }
 }
 
 @media only screen and (max-width: 576px){
@@ -700,11 +722,23 @@ color: black;
     }
     .inicio{
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(12,400px);
+        grid-template-rows: repeat(12,350px);
         grid-template-areas: "img1" "img11" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9" "img10" "video";
     }
     .flecha{
         left: 82%
+    }
+    .cuadros{
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(15,300px);
+        grid-template-areas: "pin1 pin2" "pin3 pin4" "pin5 pin6" "pin7 pin8" "pin9 pin10" "pin11 pin12"  "pin13 pin14" "pin15 pin16" "pin17 pin18" "pin19 pin20" "pin21 pin22" "pin23 pin24" "pin25 pin26" "pin27 pin28" "pin29 pin30";
+    }
+    .filtro{
+        display:none;
+        visibility: hidden;
     }
 }
 
@@ -715,7 +749,7 @@ color: black;
     .img-carrousel{
         display: inline;
         visibility: visible;
-        padding-right: 170px;
+        padding-left: 130px;
     }
     .logoCentrado{
         display: none;
@@ -726,6 +760,22 @@ color: black;
         grid-template-areas: "img1" "img11" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9" "img10" "video";
     }
     .flecha{
-        left: 82%
+        left: 72%
     }
+    .pin{
+        border: none;
+    }
+    .cuadros{
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(15,200px);
+        grid-template-areas: "pin1 pin2" "pin3 pin4" "pin5 pin6" "pin7 pin8" "pin9 pin10" "pin11 pin12"  "pin13 pin14" "pin15 pin16" "pin17 pin18" "pin19 pin20" "pin21 pin22" "pin23 pin24" "pin25 pin26" "pin27 pin28" "pin29 pin30";
+    }
+    .filtro{
+        display:none;
+        visibility: hidden;
+    }
+
 }
