@@ -681,15 +681,15 @@ color: black;
     .flecha{
         left: 85%
     }
-    .hambrguesa{
-        display: flex;
-    }
-    .img-carrousel{
-        display: inline;
-        visibility: visible;
-        padding-right: 310px;
 
+    .img-carrousel{
+        display: flex;
+        visibility: visible;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
+
     .logoCentrado{
         display: none;
     }
@@ -708,18 +708,18 @@ color: black;
 }
 
 @media only screen and (max-width: 576px){
-    .hambrguesa{
-        display: flex;
-    }
     .img-carrousel{
-        display: inline;
+        display: flex;
         visibility: visible;
-        padding-right: 210px;
-
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
+
     .logoCentrado{
         display: none;
     }
+
     .inicio{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(12,350px);
@@ -743,17 +743,17 @@ color: black;
 }
 
 @media only screen and (max-width: 480px){
-    .navBar{
-        display: flex;
-    }
     .img-carrousel{
-        display: inline;
+        display: flex;
         visibility: visible;
-        padding-left: 130px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
     .logoCentrado{
         display: none;
     }
+    
     .inicio{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(12,300px);
