@@ -672,7 +672,7 @@ color: black;
         grid-template-areas: "pin1 pin2 pin3 filtro" "pin4 pin5 pin6 filtro" "pin7 pin8 pin9 filtro" "pin10 pin11 pin12  filtro" "pin13 pin14 pin15 filtro" "pin16 pin17 pin18 filtro" "pin19 pin20 pin21 filtro" "pin22 pin23 pin24 filtro" "pin25 pin26 pin27 filtro" "pin28 pin29 pin30 filtro";
     }
 }
-@media only screen and (max-width:768px){
+@media only screen and (max-width:767px){
     .inicio{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(6, 200px);
@@ -753,7 +753,7 @@ color: black;
     .logoCentrado{
         display: none;
     }
-    
+
     .inicio{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(12,300px);
