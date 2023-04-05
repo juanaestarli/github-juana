@@ -640,7 +640,11 @@ color: black;
 }
 .logomobile{
     display: flex;
-    width: 120px;
+    width: 150px;
+}
+
+.fa-solid, .fas{
+    font-size: 35px;
 }
 
 @media only screen and (max-width:1100px){
@@ -688,6 +692,8 @@ color: black;
         width: 100%;
         justify-content: center;
         align-items: center;
+        padding-right: 50px;
+        
     }
 
     .logoCentrado{
@@ -705,6 +711,12 @@ color: black;
         display:none;
         visibility: hidden;
     }
+    .contenedor-b{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media only screen and (max-width: 576px){
@@ -714,6 +726,7 @@ color: black;
         width: 100%;
         justify-content: center;
         align-items: center;
+        padding-right: 50px;
     }
 
     .logoCentrado{
@@ -740,6 +753,11 @@ color: black;
         display:none;
         visibility: hidden;
     }
+    .contenedor-b{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
 }
 
 @media only screen and (max-width: 480px){
@@ -749,6 +767,7 @@ color: black;
         width: 100%;
         justify-content: center;
         align-items: center;
+        padding-right: 50px;
     }
     .logoCentrado{
         display: none;
@@ -776,6 +795,11 @@ color: black;
     .filtro{
         display:none;
         visibility: hidden;
+    }
+    .contenedor-b{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
     }
 
 }
