@@ -64,11 +64,10 @@ html {
 .intro{
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    width: 380px;
+    width: 670px;
     height: 250px;
     margin: auto;
     text-align: justify;
-    overflow: auto;
 }
 
 .formulario{
@@ -100,9 +99,35 @@ footer{
     color: black;
 }
 
-.redes{
-    color:slategrey;
-    font-size: 30px;
+.redes a{
+    font-size: 25px;
+    padding: 5px;
+    padding-top: 40px;
+    font-family: 'Josefin Slab', serif;
+}
+
+.instagram{
+    font-size: 80px;
+    color: #854898;
+    padding-left: 50%;
+}
+
+.mail{
+    color: #bd192c;
+    padding-left: 60%;
+    font-size: 55px;
+}
+
+.wpp{
+    font-size: 65px;
+    color: forestgreen;
+    padding-left: 30%;
+}
+
+.facebook{
+    font-size: 70px;
+    color: #143460;
+    padding-left: 20%;
 }
 
 .inicio{
@@ -271,7 +296,7 @@ footer{
     grid-template-columns: 30px;
     grid-template-rows: repeat(4,30px);
     grid-template-areas: "ojo" "todo" "urbano" "abstracto";
-    gap: 8px;
+    gap: 15px;
 }
 a:link { text-decoration: none;
 }
@@ -647,6 +672,27 @@ color: black;
     font-size: 35px;
 }
 
+.backcont{
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.contactame{
+    font-family: 'Josefin Slab', serif;
+    font-weight: 550;
+    text-align: center;
+    color:#0E3459;
+    font-size: 50px;
+}
+
+.seleccionado{
+    border-bottom: 1px solid black;
+    padding-bottom: 1px;
+    display: inline-block;
+    margin-bottom: -2px;
+}
+
 @media only screen and (max-width:1100px){
     .inicio{
         width: 100%;
@@ -717,6 +763,33 @@ color: black;
         justify-content: center;
         align-items: center;
     }
+
+    .facebook{
+        padding-left: 10%;
+        font-size: 40px;
+    }
+    .wpp{
+        padding-left: 10%;
+        font-size: 40px;
+    }
+    .instagram{
+        padding-left: 10%;
+        font-size: 40px;
+    }
+    .mail{
+        padding-left: 10%;
+        font-size: 40px;
+    }
+    .redes a{
+        font-size: 25px;
+    }
+    .contactame{
+        font-size: 40px;
+    }
+    .intro{
+        width: 400px;
+    }
+
 }
 
 @media only screen and (max-width: 576px){
@@ -757,6 +830,9 @@ color: black;
         display: flex;
         width: 100%;
         justify-content: space-between;
+    }
+    .intro{
+        width: 350px;
     }
 }
 
@@ -800,6 +876,37 @@ color: black;
         display: flex;
         width: 100%;
         justify-content: space-between;
+    }
+    .facebook{
+        padding-left: 10%;
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .wpp{
+        padding-left: 10%;
+        font-size: 30px;
+        padding-bottom: 20px;
+
+    }
+    .instagram{
+        padding-left: 10%;
+        font-size: 30px;
+        padding-bottom: 20px;
+
+    }
+    .mail{
+        padding-left: 10%;
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    .redes a{
+        font-size: 18px;
+    }
+    .contactame{
+        font-size: 30px;
+    }
+    .intro{
+        width: 250px;
     }
 
 }
