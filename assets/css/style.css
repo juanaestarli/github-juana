@@ -12,6 +12,7 @@ html {
 .navbar-nav {
   width: 100%;
   font-size: 20px;
+  font-size: 2s;
   font-family: "Josefin Slab", serif;
   font-weight: 550;
   text-align: center;
@@ -24,6 +25,9 @@ html {
   display: flex;
   width: 220px;
   justify-content: center;
+}
+.navbar-nav li:hover {
+  font-size: 22px;
 }
 .navbar-nav li a {
   text-decoration: none;
@@ -43,6 +47,10 @@ html {
   padding-bottom: 1px;
   display: inline-block;
   margin-bottom: -2px;
+  border-bottom: 2s;
+}
+.navbar-nav li a .seleccionado:hover {
+  border-bottom: 1.5px solid black;
 }
 .navbar-nav li .logoCentrado {
   width: 140px;
@@ -306,6 +314,9 @@ footer .flecha {
   padding-bottom: 1px;
   display: inline-block;
   margin-bottom: -2px;
+}
+.grillatextos a .seleccionado:hover {
+  border-bottom: 1.5px solid black;
 }
 
 .ojo {
