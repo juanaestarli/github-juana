@@ -40,21 +40,31 @@ html {
   text-decoration: none;
   color: black;
 }
+.navbar-nav li a .seleccionado {
+  border-bottom: 1px solid black;
+  padding-bottom: 1px;
+  display: inline-block;
+  margin-bottom: -2px;
+}
+.navbar-nav li .logoCentrado {
+  width: 140px;
+}
+
+.img-carrousel {
+  display: none;
+  visibility: hidden;
+}
+.img-carrousel .logomobile {
+  display: flex;
+  width: 150px;
+}
 
 .navbar-toggler-icon {
   color: black;
   border: none;
 }
-
-.logoCentrado {
-  width: 140px;
-}
-
-.flecha {
-  width: 80px;
-  position: fixed;
-  top: 90%;
-  left: 91%;
+.navbar-toggler-icon .fa-solid, .navbar-toggler-icon .fas {
+  font-size: 35px;
 }
 
 .gra {
@@ -79,6 +89,12 @@ footer {
   font-family: "Josefin Slab", serif;
   color: black;
 }
+footer .flecha {
+  width: 80px;
+  position: fixed;
+  top: 90%;
+  left: 91%;
+}
 
 .redes a {
   font-size: 25px;
@@ -86,26 +102,22 @@ footer {
   padding-top: 40px;
   font-family: "Josefin Slab", serif;
 }
-
-.instagram {
+.redes .instagram {
   font-size: 80px;
   color: #854898;
   padding-left: 50%;
 }
-
-.mail {
+.redes .mail {
   color: #bd192c;
   padding-left: 60%;
   font-size: 55px;
 }
-
-.wpp {
+.redes .wpp {
   font-size: 65px;
   color: forestgreen;
   padding-left: 30%;
 }
-
-.facebook {
+.redes .facebook {
   font-size: 70px;
   color: #143460;
   padding-left: 20%;
@@ -119,85 +131,71 @@ footer {
   grid-template-rows: repeat(5, 220px);
   grid-template-areas: "img7 img7 img6 img9 video" "img7 img7 img2 img2 video" "img1 img3 img4 img5 img5" " img1 img8 img8 img5 img5" "img11 img8 img8 img10 img10";
 }
-
-.img {
+.inicio .img {
   background-size: cover;
   background-position: center;
 }
-
-.img1 {
+.inicio .img1 {
   background-image: url(../img/inicio/uno.jpeg);
   grid-area: img1;
   width: 100%;
 }
-
-.img2 {
+.inicio .img2 {
   background-image: url(../img/inicio/dos.jpeg);
   grid-area: img2;
   width: 100%;
 }
-
-.img3 {
+.inicio .img3 {
   background-image: url(../img/inicio/tres.jpeg);
   grid-area: img3;
   width: 100%;
 }
-
-.img4 {
+.inicio .img4 {
   background-image: url(../img/inicio/cuatro.jpeg);
   grid-area: img4;
   width: 100%;
 }
-
-.img5 {
+.inicio .img5 {
   background-image: url(../img/inicio/cinco.jpeg);
   grid-area: img5;
   width: 100%;
 }
-
-.img6 {
+.inicio .img6 {
   background-image: url(../img/inicio/seis.jpeg);
   grid-area: img6;
   width: 100%;
 }
-
-.img7 {
+.inicio .img7 {
   background-image: url(../img/inicio/siete.jpeg);
   grid-area: img7;
   width: 100%;
 }
-
-.img8 {
+.inicio .img8 {
   background-image: url(../img/inicio/ocho.jpeg);
   grid-area: img8;
   width: 100%;
 }
-
-.img9 {
+.inicio .img9 {
   background-image: url(../img/inicio/nueve.jpeg);
   grid-area: img9;
   width: 100%;
 }
-
-.img10 {
+.inicio .img10 {
   background-image: url(../img/inicio/diez.jpeg);
   grid-area: img10;
   width: 100%;
 }
-
-.img11 {
+.inicio .img11 {
   background-image: url(../img/inicio/once.jpeg);
   grid-area: img11;
   width: 100%;
 }
-
-.img12 {
+.inicio .img12 {
   background-image: url(../img/inicio/doce.jpeg);
   grid-area: img12;
   width: 100%;
 }
-
-.video {
+.inicio .video {
   grid-area: video;
   width: 100%;
   height: 100%;
@@ -277,6 +275,25 @@ footer {
   grid-template-rows: repeat(4, 30px);
   grid-template-areas: "ojo" "todo" "urbano" "abstracto";
   gap: 15px;
+}
+.grillatextos a {
+  text-decoration: none;
+  color: black;
+  width: 150px;
+  font-weight: 300;
+}
+.grillatextos a:link {
+  text-decoration: none;
+}
+.grillatextos a:visited {
+  text-decoration: none;
+  color: black;
+}
+.grillatextos a .seleccionado {
+  border-bottom: 1px solid black;
+  padding-bottom: 1px;
+  display: inline-block;
+  margin-bottom: -2px;
 }
 
 .ojo {
@@ -625,20 +642,6 @@ footer {
   grid-template-areas: "pin1 pin3 pin7 filtro" "pin8 pin13 pin17 filtro" "pin19 pin28 pin29 filtro";
 }
 
-.img-carrousel {
-  display: none;
-  visibility: hidden;
-}
-
-.logomobile {
-  display: flex;
-  width: 150px;
-}
-
-.fa-solid, .fas {
-  font-size: 35px;
-}
-
 .backcont {
   background-image: url(../img/fondo.jpg);
   background-size: cover;
@@ -651,13 +654,6 @@ footer {
   text-align: center;
   color: #0E3459;
   font-size: 50px;
-}
-
-.seleccionado {
-  border-bottom: 1px solid black;
-  padding-bottom: 1px;
-  display: inline-block;
-  margin-bottom: -2px;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -696,14 +692,6 @@ footer {
   .flecha {
     left: 85%;
   }
-  .img-carrousel {
-    display: flex;
-    visibility: visible;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding-right: 50px;
-  }
   .logoCentrado {
     display: none;
   }
@@ -725,24 +713,32 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  .facebook {
-    padding-left: 10%;
-    font-size: 40px;
-  }
-  .wpp {
-    padding-left: 10%;
-    font-size: 40px;
-  }
-  .instagram {
-    padding-left: 10%;
-    font-size: 40px;
-  }
-  .mail {
-    padding-left: 10%;
-    font-size: 40px;
+  .contenedor-b .img-carrousel {
+    display: flex;
+    visibility: visible;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
   }
   .redes a {
     font-size: 25px;
+  }
+  .redes .facebook {
+    padding-left: 10%;
+    font-size: 40px;
+  }
+  .redes .wpp {
+    padding-left: 10%;
+    font-size: 40px;
+  }
+  .redes .instagram {
+    padding-left: 10%;
+    font-size: 40px;
+  }
+  .redes .mail {
+    padding-left: 10%;
+    font-size: 40px;
   }
   .contactame {
     font-size: 40px;
@@ -752,14 +748,6 @@ footer {
   }
 }
 @media only screen and (max-width: 576px) {
-  .img-carrousel {
-    display: flex;
-    visibility: visible;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding-right: 50px;
-  }
   .logoCentrado {
     display: none;
   }
@@ -788,12 +776,7 @@ footer {
     width: 100%;
     justify-content: space-between;
   }
-  .intro {
-    width: 350px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .img-carrousel {
+  .contenedor-b .img-carrousel {
     display: flex;
     visibility: visible;
     width: 100%;
@@ -801,6 +784,11 @@ footer {
     align-items: center;
     padding-right: 50px;
   }
+  .intro {
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 480px) {
   .logoCentrado {
     display: none;
   }
@@ -832,28 +820,36 @@ footer {
     width: 100%;
     justify-content: space-between;
   }
-  .facebook {
-    padding-left: 10%;
-    font-size: 30px;
-    padding-bottom: 20px;
-  }
-  .wpp {
-    padding-left: 10%;
-    font-size: 30px;
-    padding-bottom: 20px;
-  }
-  .instagram {
-    padding-left: 10%;
-    font-size: 30px;
-    padding-bottom: 20px;
-  }
-  .mail {
-    padding-left: 10%;
-    font-size: 25px;
-    padding-bottom: 20px;
+  .contenedor-b .img-carrousel {
+    display: flex;
+    visibility: visible;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
   }
   .redes a {
     font-size: 18px;
+  }
+  .redes .facebook {
+    padding-left: 10%;
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  .redes .wpp {
+    padding-left: 10%;
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  .redes .instagram {
+    padding-left: 10%;
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  .redes .mail {
+    padding-left: 10%;
+    font-size: 25px;
+    padding-bottom: 20px;
   }
   .contactame {
     font-size: 30px;
