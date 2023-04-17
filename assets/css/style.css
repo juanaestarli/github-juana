@@ -66,26 +66,6 @@ html {
   text-align: justify;
 }
 
-.formulario {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  margin-left: 40%;
-  margin-bottom: 5%;
-}
-
-.cont {
-  color: rgb(14, 172, 172);
-  margin-left: 10%;
-}
-
-#boton {
-  background-color: rgb(14, 172, 172);
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  margin-left: 13%;
-  border-style: dashed;
-}
-
 footer {
   text-align: center;
   font-size: 18px;
@@ -228,7 +208,7 @@ footer {
   grid-template-areas: "azul rojo" "violeta gris" "negro blanco" "verde rosa";
   grid-gap: 10px;
   -moz-column-gap: 15px;
-       column-gap: 15px;
+  column-gap: 15px;
 }
 
 .colores {
@@ -886,4 +866,4 @@ a:visited {
   .intro {
     width: 250px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
