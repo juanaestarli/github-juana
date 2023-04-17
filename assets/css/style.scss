@@ -5,12 +5,11 @@
     box-sizing: border-box;
 }
 
-/* font-family: 'Josefin Slab', serif;
-font-family: 'Montserrat', sans-serif */
 html {
     scroll-behavior: smooth;
 }
 
+// inicio-navbar
 .navbar-nav {
     width: 100%;
     font-size: 20px;
@@ -66,22 +65,9 @@ html {
         font-size: 35px;
     }
 }
+// fin-navbar
 
-
-.gra {
-    width: 60%;
-    padding-left: 40%;
-}
-
-.intro {
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    width: 670px;
-    height: 250px;
-    margin: auto;
-    text-align: justify;
-}
-
+// inicio-footer
 footer {
     text-align: center;
     font-size: 18px;
@@ -96,7 +82,25 @@ footer {
         left: 91%;
     }
 }
+// fin-footer
 
+// inicio-page ACERCA
+.gra {
+    width: 60%;
+    padding-left: 40%;
+}
+
+.intro {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    width: 670px;
+    height: 250px;
+    margin: auto;
+    text-align: justify;
+}
+// fin-page ACERCA
+
+// inicio-page CONTACTO
 .redes {
     a {
     font-size: 25px;
@@ -128,7 +132,22 @@ footer {
         padding-left: 20%;
     }
 }
+.backcont {
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+}
 
+.contactame {
+    font-family: "Josefin Slab", serif;
+    font-weight: 550;
+    text-align: center;
+    color: #0E3459;
+    font-size: 50px;
+}
+// fin-page CONTACTO
+
+// inicio- page INDEX
 .inicio {
     width: 100%;
     height: auto;
@@ -219,8 +238,9 @@ footer {
         height: 100%;
     }
 }
+// fin- page INDEX
 
-
+// inicio- page PINCELADAS
 .grillacolores {
     margin: 0;
     width: auto;
@@ -661,22 +681,27 @@ footer {
     grid-template-rows: repeat(3, 400px);
     grid-template-areas: "pin1 pin3 pin7 filtro" "pin8 pin13 pin17 filtro" "pin19 pin28 pin29 filtro";
 }
+// inicio- page PINCELADAS
 
-.backcont {
-    background-image: url(../img/fondo.jpg);
-    background-size: cover;
-    background-position: center;
+
+// inicio-mixins para media query
+@mixin for-desktop{
+    @media only screen and (max-width: 1100px){@content;}
+}
+@mixin for-tablet-landscape{
+    @media only screen and (max-width: 767px){@content;}
+}
+@mixin for-tablet-portrait{
+    @media only screen and (max-width: 576px){@content;}
+}
+@mixin for-phone{
+    @media only screen and (max-width: 480px){@content;}
 }
 
-.contactame {
-    font-family: "Josefin Slab", serif;
-    font-weight: 550;
-    text-align: center;
-    color: #0E3459;
-    font-size: 50px;
-}
+// fin-mixins
 
-@media only screen and (max-width: 1100px) {
+// inicio-responsive
+@include for-desktop{
     .inicio {
         width: 100%;
         height: auto;
@@ -705,7 +730,7 @@ footer {
         grid-template-areas: "pin1 pin2 pin3 filtro" "pin4 pin5 pin6 filtro" "pin7 pin8 pin9 filtro" "pin10 pin11 pin12  filtro" "pin13 pin14 pin15 filtro" "pin16 pin17 pin18 filtro" "pin19 pin20 pin21 filtro" "pin22 pin23 pin24 filtro" "pin25 pin26 pin27 filtro" "pin28 pin29 pin30 filtro";
     }
 }
-@media only screen and (max-width: 767px) {
+@include for-tablet-landscape {
     .inicio {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(6, 200px);
@@ -772,7 +797,7 @@ footer {
         width: 400px;
     }
 }
-@media only screen and (max-width: 576px) {
+@include for-tablet-portrait {
     .logoCentrado {
         display: none;
     }
@@ -800,20 +825,14 @@ footer {
         display: flex;
         width: 100%;
         justify-content: space-between;
-        .img-carrousel {
-            display: flex;
-            visibility: visible;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            padding-right: 50px;
-        }
+        @extend .img-carrousel;
     }
     .intro {
         width: 350px;
     }
 }
-@media only screen and (max-width: 480px) {
+@include for-phone{
+
     .logoCentrado {
         display: none;
     }
@@ -844,14 +863,7 @@ footer {
         display: flex;
         width: 100%;
         justify-content: space-between;
-        .img-carrousel {
-            display: flex;
-            visibility: visible;
-            width: 100%;
-            justify-content: center;
-            align-items: center;
-            padding-right: 50px;
-        }
+        @extend .img-carrousel;
     }
 
     .redes {
@@ -886,3 +898,4 @@ footer {
         width: 250px;
     }
 }
+// fin-responsive
