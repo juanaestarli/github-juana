@@ -37,7 +37,7 @@ html {
                 color: black;
             }
             .seleccionado {
-                border-bottom: 1px solid black;
+                border-bottom: 1px solid green;
                 padding-bottom: 1px;
                 display: inline-block;
                 margin-bottom: -2px;
@@ -825,7 +825,14 @@ footer {
         display: flex;
         width: 100%;
         justify-content: space-between;
-        @extend .img-carrousel;
+        .img-carrousel {
+            display: flex;
+            visibility: visible;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            padding-right: 50px;
+        }
     }
     .intro {
         width: 350px;
@@ -863,7 +870,14 @@ footer {
         display: flex;
         width: 100%;
         justify-content: space-between;
-        @extend .img-carrousel;
+        .img-carrousel {
+            display: flex;
+            visibility: visible;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            padding-right: 50px;
+        }
     }
 
     .redes {
