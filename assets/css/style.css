@@ -1,802 +1,910 @@
-@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Cutive+Mono&family=Josefin+Slab:wght@300&family=Montserrat:wght@200&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Cutive+Mono&family=Josefin+Slab:wght@300&family=Montserrat:wght@200&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
 
 /* font-family: 'Josefin Slab', serif;
 font-family: 'Montserrat', sans-serif */
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 .navbar-nav {
-  width: 100%;
-  font-size: 20px;
-  font-family: "Josefin Slab", serif;
-  font-weight: 550;
-  text-align: center;
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width:100%;
+    font-size: 20px;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 550;
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
 }
+
 .navbar-nav li {
-  display: flex;
-  width: 220px;
-  justify-content: center;
+    display: flex;
+    width: 220px;
+    justify-content: center;
+
 }
-.navbar-nav li a {
-  text-decoration: none;
-  color: black;
-  width: 150px;
-  font-weight: 300;
-}
-.navbar-nav li a:link {
-  text-decoration: none;
-}
-.navbar-nav li a:visited {
-  text-decoration: none;
-  color: black;
+    
+.navbar-nav a {   
+    text-decoration: none;
+    color: black;
+    width: 150px;
+    font-weight: 300;
 }
 
-.contenedor-b {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
-.contenedor-b .navbar-toggler-icon {
-  color: black;
-  border: none;
-}
-.contenedor-b .img-carrousel {
-  display: none;
-  visibility: hidden;
-}
-.contenedor-b .img-carrousel .logomobile {
-  display: flex;
-  width: 150px;
+.navbar-toggler-icon{
+    color: black;
+    border: none;
 }
 
-.logoCentrado {
-  width: 140px;
+.logoCentrado{
+    width: 140px;
 }
 
-.gra {
-  width: 60%;
-  padding-left: 40%;
+.flecha{
+    width: 80px;
+    position:fixed;
+    top: 90%;
+    left: 91%;
 }
 
-.intro {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  width: 670px;
-  height: 250px;
-  margin: auto;
-  text-align: justify;
+.gra{
+    width: 60%;
+    padding-left: 40%;
 }
 
-footer {
-  text-align: center;
-  font-size: 18px;
-  padding: 20px;
-  padding-top: 40px;
-  font-family: "Josefin Slab", serif;
-  color: black;
-}
-footer .flecha {
-  width: 80px;
-  position: fixed;
-  top: 90%;
-  left: 91%;
+.intro{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    width: 670px;
+    height: 250px;
+    margin: auto;
+    text-align: justify;
 }
 
-.redes a {
-  font-size: 25px;
-  padding: 5px;
-  padding-top: 40px;
-  font-family: "Josefin Slab", serif;
-}
-.redes a .instagram {
-  font-size: 80px;
-  color: #854898;
-  padding-left: 50%;
-}
-.redes a .mail {
-  color: #bd192c;
-  padding-left: 60%;
-  font-size: 55px;
-}
-.redes a .wpp {
-  font-size: 65px;
-  color: forestgreen;
-  padding-left: 30%;
-}
-.redes a .facebook {
-  font-size: 70px;
-  color: #143460;
-  padding-left: 20%;
+.formulario{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-left: 40%;
+    margin-bottom: 5%;
 }
 
-.inicio {
-  width: 100%;
-  height: auto;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 220px);
-  grid-template-areas: "img7 img7 img6 img9 video" "img7 img7 img2 img2 video" "img1 img3 img4 img5 img5" " img1 img8 img8 img5 img5" "img11 img8 img8 img10 img10";
-}
-.inicio .img {
-  background-size: cover;
-  background-position: center;
-}
-.inicio .img1 {
-  background-image: url(../img/inicio/uno.jpeg);
-  grid-area: img1;
-  width: 100%;
-}
-.inicio .img2 {
-  background-image: url(../img/inicio/dos.jpeg);
-  grid-area: img2;
-  width: 100%;
-}
-.inicio .img3 {
-  background-image: url(../img/inicio/tres.jpeg);
-  grid-area: img3;
-  width: 100%;
-}
-.inicio .img4 {
-  background-image: url(../img/inicio/cuatro.jpeg);
-  grid-area: img4;
-  width: 100%;
-}
-.inicio .img5 {
-  background-image: url(../img/inicio/cinco.jpeg);
-  grid-area: img5;
-  width: 100%;
-}
-.inicio .img6 {
-  background-image: url(../img/inicio/seis.jpeg);
-  grid-area: img6;
-  width: 100%;
-}
-.inicio .img7 {
-  background-image: url(../img/inicio/siete.jpeg);
-  grid-area: img7;
-  width: 100%;
-}
-.inicio .img8 {
-  background-image: url(../img/inicio/ocho.jpeg);
-  grid-area: img8;
-  width: 100%;
-}
-.inicio .img9 {
-  background-image: url(../img/inicio/nueve.jpeg);
-  grid-area: img9;
-  width: 100%;
-}
-.inicio .img10 {
-  background-image: url(../img/inicio/diez.jpeg);
-  grid-area: img10;
-  width: 100%;
-}
-.inicio .img11 {
-  background-image: url(../img/inicio/once.jpeg);
-  grid-area: img11;
-  width: 100%;
-}
-.inicio .img12 {
-  background-image: url(../img/inicio/doce.jpeg);
-  grid-area: img12;
-  width: 100%;
-}
-.inicio .video {
-  grid-area: video;
-  width: 100%;
-  height: 100%;
+.cont{
+    color: rgb(14, 172, 172);
+    margin-left: 10%;
 }
 
-.cuadros {
-  width: auto;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 150px;
-  grid-template-rows: repeat(10, 400px);
-  grid-template-areas: "pin1 pin2 pin3 filtro" "pin4 pin5 pin6 filtro" "pin7 pin8 pin9 filtro" "pin10 pin11 pin12  filtro" "pin13 pin14 pin15 filtro" "pin16 pin17 pin18 filtro" "pin19 pin20 pin21 filtro" "pin22 pin23 pin24 filtro" "pin25 pin26 pin27 filtro" "pin28 pin29 pin30 filtro";
-}
-.cuadros .filtro {
-  padding-left: 40px;
-  grid-area: filtro;
-}
-.cuadros .filtro .grillatextos {
-  width: auto;
-  height: auto;
-  display: grid;
-  grid-template-columns: 30px;
-  grid-template-rows: repeat(4, 30px);
-  grid-template-areas: "ojo" "todo" "urbano" "abstracto";
-  gap: 15px;
-}
-.cuadros .filtro .grillatextos .ojo {
-  width: 25px;
-  margin-left: 15px;
-  grid-area: ojo;
-}
-.cuadros .filtro .grillatextos .texto {
-  font-size: 16px;
-  font-family: "Josefin Slab", serif;
-  /* text-align: center; */
-}
-.cuadros .filtro .grillatextos .todo {
-  font-size: 22px;
-  margin-top: 10px;
-}
-.cuadros .filtro .grillatextos .urbano {
-  margin-top: 18px;
-}
-.cuadros .filtro .grillacolores {
-  margin: 0;
-  width: auto;
-  height: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 30px);
-  grid-template-rows: repeat(4, 30px);
-  grid-template-areas: "azul rojo" "violeta gris" "negro blanco" "verde rosa";
-  grid-gap: 10px;
-  -moz-column-gap: 15px;
-       column-gap: 15px;
-}
-.cuadros .filtro .grillacolores .colores {
-  background-size: cover;
-  background-position: center;
-}
-.cuadros .filtro .grillacolores .azul {
-  background-image: url(../img/pinceladas/Captura\ de\ pantalla\ \(43\).png);
-  grid-area: azul;
-  width: 100%;
-}
-.cuadros .filtro .grillacolores .rojo {
-  background-image: url(../img/pinceladas/Captura\ de\ pantalla\ \(44\).png);
-  grid-area: rojo;
-  width: 100%;
-}
-.cuadros .filtro .grillacolores .violeta {
-  background-image: url(../img/pinceladas/Captura\ de\ pantalla\ \(45\).png);
-  grid-area: violeta;
-  width: 100%;
-}
-.cuadros .filtro .grillacolores .gris {
-  background-image: url(../img/pinceladas/Captura\ de\ pantalla\ \(46\).png);
-  grid-area: gris;
-  width: 100%;
-}
-.cuadros .filtro .grillacolores .negro {
-  background-image: url(../img/pinceladas/Captura\ de\ pantalla\ \(47\).png);
-  grid-area: negro;
-  width: 100%;
-}
-.cuadros .filtro .grillacolores .blanco {
-  background-image: url(../img/pinceladas/Captura\ de\ pantalla\ \(48\).png);
-  grid-area: blanco;
-  width: 100%;
-}
-.cuadros .filtro .grillacolores .verde {
-  background-image: url(../img/pinceladas/Captura\ de\ pantalla\ \(49\).png);
-  grid-area: verde;
-  width: 100%;
-}
-.cuadros .filtro .grillacolores .rosa {
-  background-image: url(../img/pinceladas/Captura\ de\ pantalla\ \(50\).png);
-  grid-area: rosa;
-  width: 100%;
-}
-.cuadros .pin {
-  background-size: cover;
-  background-position: center;
-  border: 20px solid;
-}
-.cuadros .pin1 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.02.jpeg);
-  width: 100%;
-  grid-area: pin1;
-  border-color: #C84C47;
-}
-.cuadros .pin2 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.02\ \(1\).jpeg);
-  width: 100%;
-  grid-area: pin2;
-  border-color: #5A4A6F;
-}
-.cuadros .pin3 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.03.jpeg);
-  width: 100%;
-  grid-area: pin3;
-  border-color: #9D6F74;
-}
-.cuadros .pin4 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.03\ \(1\).jpeg);
-  width: 100%;
-  grid-area: pin4;
-  border-color: #64B2B9;
-}
-.cuadros .pin5 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.03\ \(2\).jpeg);
-  width: 100%;
-  grid-area: pin5;
-  border-color: #6C3533;
-}
-.cuadros .pin6 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10.jpeg);
-  width: 100%;
-  grid-area: pin6;
-  border-color: #418777;
-}
-.cuadros .pin7 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10\ \(1\).jpeg);
-  width: 100%;
-  grid-area: pin7;
-  border-color: #621A38;
-}
-.cuadros .pin8 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10\ \(2\).jpeg);
-  width: 100%;
-  grid-area: pin8;
-  border-color: #A3A3A1;
-}
-.cuadros .pin9 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10\ \(3\).jpeg);
-  width: 100%;
-  grid-area: pin9;
-  border-color: #E5CDA1;
-}
-.cuadros .pin10 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10\ \(4\).jpeg);
-  width: 100%;
-  grid-area: pin10;
-  border-color: #33728E;
-}
-.cuadros .pin11 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10\ \(5\).jpeg);
-  width: 100%;
-  grid-area: pin11;
-  border-color: #F33103;
-}
-.cuadros .pin12 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10\ \(6\).jpeg);
-  width: 100%;
-  grid-area: pin12;
-  border-color: #A6C177;
-}
-.cuadros .pin13 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11.jpeg);
-  width: 100%;
-  grid-area: pin13;
-  border-color: #C69BA4;
-}
-.cuadros .pin14 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(10\).jpeg);
-  width: 100%;
-  grid-area: pin14;
-  border-color: #0CBAC3;
-}
-.cuadros .pin15 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(11\).jpeg);
-  width: 100%;
-  grid-area: pin15;
-  border-color: #6D2421;
-}
-.cuadros .pin16 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(12\).jpeg);
-  width: 100%;
-  grid-area: pin16;
-  border-color: #854898;
-}
-.cuadros .pin17 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(1\).jpeg);
-  width: 100%;
-  grid-area: pin17;
-  border-color: #0E3459;
-}
-.cuadros .pin18 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(2\).jpeg);
-  width: 100%;
-  grid-area: pin18;
-  border-color: #B8C2BA;
-}
-.cuadros .pin19 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(3\).jpeg);
-  width: 100%;
-  grid-area: pin19;
-  border-color: #304357;
-}
-.cuadros .pin20 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(4\).jpeg);
-  width: 100%;
-  grid-area: pin20;
-  border-color: #438E75;
-}
-.cuadros .pin21 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(5\).jpeg);
-  width: 100%;
-  grid-area: pin21;
-  border-color: #767489;
-}
-.cuadros .pin22 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(6\).jpeg);
-  width: 100%;
-  grid-area: pin22;
-  border-color: #8CC2CE;
-}
-.cuadros .pin23 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(7\).jpeg);
-  width: 100%;
-  grid-area: pin23;
-  border-color: #902422;
-}
-.cuadros .pin24 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(8\).jpeg);
-  width: 100%;
-  grid-area: pin24;
-  border-color: #8E888C;
-}
-.cuadros .pin25 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(9\).jpeg);
-  width: 100%;
-  grid-area: pin25;
-  border-color: #143460;
-}
-.cuadros .pin26 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.12.jpeg);
-  width: 100%;
-  grid-area: pin26;
-  border-color: #871C28;
-}
-.cuadros .pin27 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.12\ \(1\).jpeg);
-  width: 100%;
-  grid-area: pin27;
-  border-color: #A4AD49;
-}
-.cuadros .pin28 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.12\ \(2\).jpeg);
-  width: 100%;
-  grid-area: pin28;
-  border-color: #9B4560;
-}
-.cuadros .pin29 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.12\ \(3\).jpeg);
-  width: 100%;
-  grid-area: pin29;
-  border-color: #DFE0D8;
-}
-.cuadros .pin30 {
-  background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.12\ \(4\).jpeg);
-  width: 100%;
-  grid-area: pin30;
-  border-color: #6AA2A1;
-}
-.cuadros .vacio {
-  width: 100%;
-  grid-area: vacio;
-  border: none;
+#boton {
+    background-color: rgb(14, 172, 172);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-left: 13%;
+    border-style: dashed;
 }
 
-.urbanos {
-  width: auto;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 150px;
-  grid-template-rows: repeat(3, 400px);
-  grid-template-areas: "pin1 pin2 pin3 filtro" "pin4 pin5 pin6 filtro" "pin7 pin25 pin30 filtro";
+footer{
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    padding-top: 40px;
+    font-family: 'Josefin Slab', serif;
+    color: black;
 }
 
-.abstractos {
-  width: auto;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 150px;
-  grid-template-rows: repeat(5, 400px);
-  grid-template-areas: "pin8 pin9 pin10 filtro" "pin11 pin12 pin13 filtro" "pin14 pin15 pin16 filtro" "pin17 pin18 pin22 filtro" "pin23 pin27 pin28 filtro";
+.redes a{
+    font-size: 25px;
+    padding: 5px;
+    padding-top: 40px;
+    font-family: 'Josefin Slab', serif;
 }
 
-.azules {
-  width: auto;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 150px;
-  grid-template-rows: repeat(5, 400px);
-  grid-template-areas: "pin4 pin5 pin6 filtro" "pin9 pin10 pin11 filtro" "pin12 pin14 pin17 filtro" "pin18 pin19 pin20 filtro" "pin22 pin26 pin30 filtro";
+.instagram{
+    font-size: 80px;
+    color: #854898;
+    padding-left: 50%;
 }
 
-.rojos {
-  width: auto;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 150px;
-  grid-template-rows: repeat(2, 400px);
-  grid-template-areas: "pin4 pin11 pin15 filtro" "pin22 pin23 pin26 filtro";
+.mail{
+    color: #bd192c;
+    padding-left: 60%;
+    font-size: 55px;
 }
 
-.violetas {
-  width: auto;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 150px;
-  grid-template-rows: repeat(4, 400px);
-  grid-template-areas: "pin1 pin2 pin3 filtro" "pin4 pin7 pin8 filtro" "pin16 pin17 pin21 filtro" "pin28 pin29 vacio filtro";
+.wpp{
+    font-size: 65px;
+    color: forestgreen;
+    padding-left: 30%;
 }
 
-.grises {
-  width: auto;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 150px;
-  grid-template-rows: repeat(3, 400px);
-  grid-template-areas: "pin2 pin3 pin8 filtro" "pin11 pin21 pin22 filtro" "pin23 pin24 vacio filtro";
+.facebook{
+    font-size: 70px;
+    color: #143460;
+    padding-left: 20%;
 }
 
-.negros {
-  width: auto;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 150px;
-  grid-template-rows: repeat(2, 400px);
-  grid-template-areas: "pin8 pin9 pin10 filtro" "pin11 pin21 pin23 filtro";
-}
-
-.blancos {
-  width: auto;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 150px;
-  grid-template-rows: repeat(3, 400px);
-  grid-template-areas: "pin8 pin9 pin10 filtro" "pin11 pin13 pin24 filtro" "pin29 pin30 vacio filtro";
-}
-
-.verdes {
-  width: auto;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 150px;
-  grid-template-rows: repeat(4, 400px);
-  grid-template-areas: "pin6 pin12 pin13 filtro" "pin14 pin18 pin19 filtro" "pin20 pin21 pin25 filtro" "pin27 pin30 vacio filtro";
-}
-
-.rosas {
-  width: auto;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 150px;
-  grid-template-rows: repeat(3, 400px);
-  grid-template-areas: "pin1 pin3 pin7 filtro" "pin8 pin13 pin17 filtro" "pin19 pin28 pin29 filtro";
-}
-
-.fa-solid, .fas {
-  font-size: 35px;
-}
-
-.backcont {
-  background-image: url(../img/fondo.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.contactame {
-  font-family: "Josefin Slab", serif;
-  font-weight: 550;
-  text-align: center;
-  color: #0E3459;
-  font-size: 50px;
-}
-
-.seleccionado {
-  border-bottom: 1px solid black;
-  padding-bottom: 1px;
-  display: inline-block;
-  margin-bottom: -2px;
-}
-
-@media only screen and (max-width: 1100px) {
-  .inicio {
+.inicio{
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 220px);
-    grid-template-areas: "img7 img7 img6 video " "img9 img2 img2 video" "img1 img3 img4 img5" " img1 img8 img8 img5" "img11 img8 img8 img10";
-  }
-  .navbar-nav li {
-    display: flex;
-    width: 150px;
-    justify-content: center;
-    align-items: center;
-  }
-  .flecha {
-    left: 85%;
-  }
-  .cuadros {
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,220px);
+    grid-template-areas: "img7 img7 img6 img9 video" "img7 img7 img2 img2 video" "img1 img3 img4 img5 img5" " img1 img8 img8 img5 img5" "img11 img8 img8 img10 img10";
+}
+
+.img{
+    background-size: cover;
+    background-position: center;
+}
+
+.img1 {
+    background-image: url(../img/inicio/uno.jpeg);
+    grid-area: img1;
+    width: 100%;
+}
+.img2 {
+    background-image: url(../img/inicio/dos.jpeg);
+    grid-area: img2;
+    width: 100%;
+
+}
+.img3 {
+    background-image: url(../img/inicio/tres.jpeg);
+    grid-area: img3;
+    width: 100%;
+
+}
+.img4 {
+    background-image: url(../img/inicio/cuatro.jpeg);
+    grid-area: img4;
+    width: 100%;
+
+}
+.img5 {
+    background-image: url(../img/inicio/cinco.jpeg);
+    grid-area: img5;
+    width: 100%;
+
+}
+.img6 {
+    background-image: url(../img/inicio/seis.jpeg);
+    grid-area: img6;
+    width: 100%;
+
+}
+.img7 {
+    background-image: url(../img/inicio/siete.jpeg);
+    grid-area: img7;
+    width: 100%;
+
+}
+.img8 {
+    background-image: url(../img/inicio/ocho.jpeg);
+    grid-area: img8;
+    width: 100%;
+
+}
+.img9 {
+    background-image: url(../img/inicio/nueve.jpeg);
+    grid-area: img9;
+    width: 100%;
+
+}
+.img10 {
+    background-image: url(../img/inicio/diez.jpeg);
+    grid-area: img10;
+    width: 100%;
+
+}
+.img11 {
+    background-image: url(../img/inicio/once.jpeg);
+    grid-area: img11;
+    width: 100%;
+
+}
+.img12{
+    background-image: url(../img/inicio/doce.jpeg);
+    grid-area: img12;
+    width: 100%;
+}
+
+.video{
+    grid-area: video;
+    width: 100%;
+    height: 100%;
+}
+
+.grillacolores{
+    margin: 0;
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2,30px);
+    grid-template-rows: repeat(4,30px);
+    grid-template-areas: "azul rojo" "violeta gris" "negro blanco" "verde rosa";
+    grid-gap: 10px;
+    column-gap: 15px;
+}
+
+.colores{
+    background-size: cover;
+    background-position: center;
+
+}
+
+
+.azul{
+    background-image: url(../img/pinceladas/Captura\ de\ pantalla\ \(43\).png);
+    grid-area: azul;
+    width: 100%;
+
+}
+.rojo{
+    background-image: url(../img/pinceladas/Captura\ de\ pantalla\ \(44\).png);
+    grid-area: rojo;
+    width: 100%;
+
+} 
+.violeta{
+    background-image: url(../img/pinceladas/Captura\ de\ pantalla\ \(45\).png);
+    grid-area: violeta;
+    width: 100%;
+
+}      
+.gris{
+    background-image: url(../img/pinceladas/Captura\ de\ pantalla\ \(46\).png);
+    grid-area: gris;
+    width: 100%;
+
+}
+.negro{
+    background-image: url(../img/pinceladas/Captura\ de\ pantalla\ \(47\).png);
+    grid-area: negro;
+    width: 100%;
+
+}
+.blanco{
+    background-image: url(../img/pinceladas/Captura\ de\ pantalla\ \(48\).png);
+    grid-area: blanco;
+    width: 100%;
+
+}
+.verde{
+    background-image: url(../img/pinceladas/Captura\ de\ pantalla\ \(49\).png);
+    grid-area: verde;
+    width: 100%;
+
+}
+.rosa{
+    background-image: url(../img/pinceladas/Captura\ de\ pantalla\ \(50\).png);
+    grid-area: rosa;
+    width: 100%;
+
+}       
+
+.grillatextos{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 30px;
+    grid-template-rows: repeat(4,30px);
+    grid-template-areas: "ojo" "todo" "urbano" "abstracto";
+    gap: 15px;
+}
+a:link { text-decoration: none;
+}
+a:visited {
+text-decoration: none;
+color: black;
+}
+.ojo{
+    width: 25px;
+    margin-left: 15px;
+    grid-area: ojo;
+}
+
+.texto {
+    font-size: 16px;
+    font-family: 'Josefin Slab', serif;
+    /* text-align: center; */
+}
+
+.todo{
+    font-size: 22px;
+    margin-top: 10px;
+}
+.urbano{
+    margin-top: 18px;
+}
+
+.filtro{
+    padding-left: 40px;
+    grid-area: filtro;
+}
+.cuadros{
     width: auto;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 150px;
-    grid-template-rows: repeat(10, 320px);
+    grid-template-rows: repeat(10,400px);
     grid-template-areas: "pin1 pin2 pin3 filtro" "pin4 pin5 pin6 filtro" "pin7 pin8 pin9 filtro" "pin10 pin11 pin12  filtro" "pin13 pin14 pin15 filtro" "pin16 pin17 pin18 filtro" "pin19 pin20 pin21 filtro" "pin22 pin23 pin24 filtro" "pin25 pin26 pin27 filtro" "pin28 pin29 pin30 filtro";
-  }
 }
-@media only screen and (max-width: 767px) {
-  .inicio {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, 200px);
-    grid-template-areas: "img6 img7" "img8 img9" "img10 img11" "img5 img1" "img2 img3" "img4 video";
-  }
-  .flecha {
-    left: 85%;
-  }
-  .logoCentrado {
-    display: none;
-  }
-  .cuadros {
-    width: auto;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(15, 350px);
-    grid-template-areas: "pin1 pin2" "pin3 pin4" "pin5 pin6" "pin7 pin8" "pin9 pin10" "pin11 pin12" "pin13 pin14" "pin15 pin16" "pin17 pin18" "pin19 pin20" "pin21 pin22" "pin23 pin24" "pin25 pin26" "pin27 pin28" "pin29 pin30";
-  }
-  .cuadros .filtro {
-    display: none;
-    visibility: hidden;
-  }
-  .contenedor-b {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-  .contenedor-b .img-carrousel {
-    display: flex;
-    visibility: visible;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding-right: 50px;
-  }
-  .redes a {
-    font-size: 25px;
-  }
-  .redes a .facebook {
-    padding-left: 10%;
-    font-size: 40px;
-  }
-  .redes a .wpp {
-    padding-left: 10%;
-    font-size: 40px;
-  }
-  .redes a .instagram {
-    padding-left: 10%;
-    font-size: 40px;
-  }
-  .redes a .mail {
-    padding-left: 10%;
-    font-size: 40px;
-  }
-  .contactame {
-    font-size: 40px;
-  }
-  .intro {
-    width: 400px;
-  }
+.pin{
+    background-size: cover;
+    background-position: center;
+    border: 20px solid;
 }
-@media only screen and (max-width: 576px) {
-  .logoCentrado {
-    display: none;
-  }
-  .inicio {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(12, 350px);
-    grid-template-areas: "img1" "img11" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9" "img10" "video";
-  }
-  .flecha {
-    left: 82%;
-  }
-  .cuadros {
-    width: auto;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(15, 300px);
-    grid-template-areas: "pin1 pin2" "pin3 pin4" "pin5 pin6" "pin7 pin8" "pin9 pin10" "pin11 pin12" "pin13 pin14" "pin15 pin16" "pin17 pin18" "pin19 pin20" "pin21 pin22" "pin23 pin24" "pin25 pin26" "pin27 pin28" "pin29 pin30";
-  }
-  .cuadros .filtro {
-    display: none;
-    visibility: hidden;
-  }
-  .contenedor-b {
-    display: flex;
+
+.pin1{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.02.jpeg);
     width: 100%;
-    justify-content: space-between;
-  }
-  .contenedor-b .img-carrousel {
-    display: flex;
-    visibility: visible;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding-right: 50px;
-  }
-  .intro {
-    width: 350px;
-  }
+    grid-area: pin1;
+    border-color: #C84C47 ;
 }
-@media only screen and (max-width: 480px) {
-  .logoCentrado {
-    display: none;
-  }
-  .inicio {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(12, 300px);
-    grid-template-areas: "img1" "img11" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9" "img10" "video";
-  }
-  .flecha {
-    left: 72%;
-  }
-  .cuadros {
-    width: auto;
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(15, 200px);
-    grid-template-areas: "pin1 pin2" "pin3 pin4" "pin5 pin6" "pin7 pin8" "pin9 pin10" "pin11 pin12" "pin13 pin14" "pin15 pin16" "pin17 pin18" "pin19 pin20" "pin21 pin22" "pin23 pin24" "pin25 pin26" "pin27 pin28" "pin29 pin30";
-  }
-  .cuadros .filtro {
-    display: none;
-    visibility: hidden;
-  }
-  .cuadros .pin {
+
+.pin2{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.02\ \(1\).jpeg);
+    width: 100%;
+    grid-area: pin2;
+    border-color: #5A4A6F;
+}
+.pin3{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.03.jpeg);
+    width: 100%;
+    grid-area: pin3;
+    border-color: #9D6F74;
+
+}
+.pin4{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.03\ \(1\).jpeg);
+    width: 100%;
+    grid-area: pin4;
+    border-color: #64B2B9;
+
+}
+.pin5{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.03\ \(2\).jpeg);
+    width: 100%;
+    grid-area: pin5;
+    border-color: #6C3533;
+
+
+}
+.pin6{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10.jpeg);
+    width: 100%;
+    grid-area: pin6;
+    border-color:  #418777;
+
+}
+.pin7{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10\ \(1\).jpeg);
+    width: 100%;
+    grid-area: pin7;
+    border-color: #621A38;
+
+}
+.pin8{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10\ \(2\).jpeg);
+    width: 100%;
+    grid-area: pin8;
+    border-color:  #A3A3A1;
+
+}
+.pin9{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10\ \(3\).jpeg);
+    width: 100%;
+    grid-area: pin9;
+    border-color:  #E5CDA1;
+
+}
+.pin10{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10\ \(4\).jpeg);
+    width: 100%;
+    grid-area: pin10;
+    border-color:  #33728E;
+
+}
+.pin11{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10\ \(5\).jpeg);
+    width: 100%;
+    grid-area: pin11;
+    border-color: #F33103;
+
+}
+.pin12{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10\ \(6\).jpeg);
+    width: 100%;
+    grid-area: pin12;
+    border-color:  #A6C177;
+
+
+}
+.pin13{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11.jpeg);
+    width: 100%;
+    grid-area: pin13;
+    border-color:  #C69BA4;
+
+
+}
+.pin14{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(10\).jpeg);
+    width: 100%;
+    grid-area: pin14;
+    border-color:  #0CBAC3;
+
+
+}
+.pin15{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(11\).jpeg);
+    width: 100%;
+    grid-area: pin15;
+    border-color:  #6D2421;
+
+
+}
+.pin16{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(12\).jpeg);
+    width: 100%;
+    grid-area: pin16;
+    border-color:  #854898;
+
+
+}
+.pin17{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(1\).jpeg);
+    width: 100%;
+    grid-area: pin17;
+    border-color:  #0E3459;
+
+
+}
+.pin18{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(2\).jpeg);
+    width: 100%;
+    grid-area: pin18;
+    border-color:  #B8C2BA;
+
+
+}
+.pin19{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(3\).jpeg);
+    width: 100%;
+    grid-area: pin19;
+    border-color:  #304357;
+
+
+}
+.pin20{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(4\).jpeg);
+    width: 100%;
+    grid-area: pin20;
+    border-color:  #438E75;
+
+
+}
+.pin21{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(5\).jpeg);
+    width: 100%;
+    grid-area: pin21;
+    border-color:  #767489;
+
+
+}
+.pin22{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(6\).jpeg);
+    width: 100%;
+    grid-area: pin22;
+    border-color:  #8CC2CE;
+
+
+}
+.pin23{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(7\).jpeg);
+    width: 100%;
+    grid-area: pin23;
+    border-color:  #902422;
+
+
+}
+.pin24{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(8\).jpeg);
+    width: 100%;
+    grid-area: pin24;
+    border-color:  #8E888C;
+
+
+}
+.pin25{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(9\).jpeg);
+    width: 100%;
+    grid-area: pin25;
+    border-color:  #143460;
+
+
+}
+.pin26{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.12.jpeg);
+    width: 100%;
+    grid-area: pin26;
+    border-color:  #871C28;
+
+
+}
+.pin27{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.12\ \(1\).jpeg);
+    width: 100%;
+    grid-area: pin27;
+    border-color:  #A4AD49;
+
+
+}
+.pin28{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.12\ \(2\).jpeg);
+    width: 100%;
+    grid-area: pin28;
+    border-color:  #9B4560;
+
+
+}
+.pin29{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.12\ \(3\).jpeg);
+    width: 100%;
+    grid-area: pin29;
+    border-color: #DFE0D8;
+
+
+}
+.pin30{
+    background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.12\ \(4\).jpeg);
+    width: 100%;
+    grid-area: pin30;
+    border-color: #6AA2A1;
+
+
+}
+.vacio{
+    width: 100%;
+    grid-area: vacio;
     border: none;
-  }
-  .contenedor-b {
+}
+
+.urbanos{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 150px;
+    grid-template-rows: repeat(3,400px);
+    grid-template-areas: "pin1 pin2 pin3 filtro" "pin4 pin5 pin6 filtro" "pin7 pin25 pin30 filtro";
+}
+.abstractos{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 150px;
+    grid-template-rows: repeat(5,400px);
+    grid-template-areas: "pin8 pin9 pin10 filtro" "pin11 pin12 pin13 filtro" "pin14 pin15 pin16 filtro" "pin17 pin18 pin22 filtro" "pin23 pin27 pin28 filtro";
+}
+.azules{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 150px;
+    grid-template-rows: repeat(5,400px);
+    grid-template-areas: "pin4 pin5 pin6 filtro" "pin9 pin10 pin11 filtro" "pin12 pin14 pin17 filtro" "pin18 pin19 pin20 filtro" "pin22 pin26 pin30 filtro";
+}
+.rojos{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 150px;
+    grid-template-rows: repeat(2,400px);
+    grid-template-areas: "pin4 pin11 pin15 filtro" "pin22 pin23 pin26 filtro";
+}
+.violetas{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 150px;
+    grid-template-rows: repeat(4,400px);
+    grid-template-areas: "pin1 pin2 pin3 filtro" "pin4 pin7 pin8 filtro" "pin16 pin17 pin21 filtro" "pin28 pin29 vacio filtro";
+}
+.grises{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 150px;
+    grid-template-rows: repeat(3,400px);
+    grid-template-areas: "pin2 pin3 pin8 filtro" "pin11 pin21 pin22 filtro" "pin23 pin24 vacio filtro";
+}
+.negros{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 150px;
+    grid-template-rows: repeat(2,400px);
+    grid-template-areas: "pin8 pin9 pin10 filtro" "pin11 pin21 pin23 filtro";
+}
+.blancos{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 150px;
+    grid-template-rows: repeat(3,400px);
+    grid-template-areas: "pin8 pin9 pin10 filtro" "pin11 pin13 pin24 filtro" "pin29 pin30 vacio filtro";
+}
+.verdes{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 150px;
+    grid-template-rows: repeat(4,400px);
+    grid-template-areas: "pin6 pin12 pin13 filtro" "pin14 pin18 pin19 filtro" "pin20 pin21 pin25 filtro" "pin27 pin30 vacio filtro";
+}
+.rosas{
+    width: auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 150px;
+    grid-template-rows: repeat(3,400px);
+    grid-template-areas: "pin1 pin3 pin7 filtro" "pin8 pin13 pin17 filtro" "pin19 pin28 pin29 filtro";
+}
+
+.img-carrousel{
+    display: none;
+    visibility: hidden;
+    
+}
+.logomobile{
     display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
-  .contenedor-b .img-carrousel {
-    display: flex;
-    visibility: visible;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding-right: 50px;
-  }
-  .redes a {
-    font-size: 18px;
-  }
-  .redes a .facebook {
-    padding-left: 10%;
-    font-size: 30px;
-    padding-bottom: 20px;
-  }
-  .redes a .wpp {
-    padding-left: 10%;
-    font-size: 30px;
-    padding-bottom: 20px;
-  }
-  .redes a .instagram {
-    padding-left: 10%;
-    font-size: 30px;
-    padding-bottom: 20px;
-  }
-  .redes a .mail {
-    padding-left: 10%;
-    font-size: 25px;
-    padding-bottom: 20px;
-  }
-  .contactame {
-    font-size: 30px;
-  }
-  .intro {
-    width: 250px;
-  }
-}/*# sourceMappingURL=style.css.map */
+    width: 150px;
+}
+
+.fa-solid, .fas{
+    font-size: 35px;
+}
+
+.backcont{
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.contactame{
+    font-family: 'Josefin Slab', serif;
+    font-weight: 550;
+    text-align: center;
+    color:#0E3459;
+    font-size: 50px;
+}
+
+.seleccionado{
+    border-bottom: 1px solid black;
+    padding-bottom: 1px;
+    display: inline-block;
+    margin-bottom: -2px;
+}
+
+@media only screen and (max-width:1100px){
+    .inicio{
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(5,220px);
+        grid-template-areas: "img7 img7 img6 video " "img9 img2 img2 video" "img1 img3 img4 img5" " img1 img8 img8 img5" "img11 img8 img8 img10";
+    }
+    
+    .navbar-nav li {
+        display: flex;
+        width: 150px;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .flecha{
+        left: 85%
+    }
+    .cuadros{
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 150px;
+        grid-template-rows: repeat(10,320px);
+        grid-template-areas: "pin1 pin2 pin3 filtro" "pin4 pin5 pin6 filtro" "pin7 pin8 pin9 filtro" "pin10 pin11 pin12  filtro" "pin13 pin14 pin15 filtro" "pin16 pin17 pin18 filtro" "pin19 pin20 pin21 filtro" "pin22 pin23 pin24 filtro" "pin25 pin26 pin27 filtro" "pin28 pin29 pin30 filtro";
+    }
+}
+@media only screen and (max-width:767px){
+    .inicio{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 200px);
+        grid-template-areas: "img6 img7" "img8 img9" "img10 img11" "img5 img1" "img2 img3" "img4 video" ;
+    }
+    .flecha{
+        left: 85%
+    }
+
+    .img-carrousel{
+        display: flex;
+        visibility: visible;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-right: 50px;
+        
+    }
+
+    .logoCentrado{
+        display: none;
+    }
+    .cuadros{
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(15,350px);
+        grid-template-areas: "pin1 pin2" "pin3 pin4" "pin5 pin6" "pin7 pin8" "pin9 pin10" "pin11 pin12"  "pin13 pin14" "pin15 pin16" "pin17 pin18" "pin19 pin20" "pin21 pin22" "pin23 pin24" "pin25 pin26" "pin27 pin28" "pin29 pin30";
+    }
+    .filtro{
+        display:none;
+        visibility: hidden;
+    }
+    .contenedor-b{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .facebook{
+        padding-left: 10%;
+        font-size: 40px;
+    }
+    .wpp{
+        padding-left: 10%;
+        font-size: 40px;
+    }
+    .instagram{
+        padding-left: 10%;
+        font-size: 40px;
+    }
+    .mail{
+        padding-left: 10%;
+        font-size: 40px;
+    }
+    .redes a{
+        font-size: 25px;
+    }
+    .contactame{
+        font-size: 40px;
+    }
+    .intro{
+        width: 400px;
+    }
+
+}
+
+@media only screen and (max-width: 576px){
+    .img-carrousel{
+        display: flex;
+        visibility: visible;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-right: 50px;
+    }
+
+    .logoCentrado{
+        display: none;
+    }
+
+    .inicio{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12,350px);
+        grid-template-areas: "img1" "img11" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9" "img10" "video";
+    }
+    .flecha{
+        left: 82%
+    }
+    .cuadros{
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(15,300px);
+        grid-template-areas: "pin1 pin2" "pin3 pin4" "pin5 pin6" "pin7 pin8" "pin9 pin10" "pin11 pin12"  "pin13 pin14" "pin15 pin16" "pin17 pin18" "pin19 pin20" "pin21 pin22" "pin23 pin24" "pin25 pin26" "pin27 pin28" "pin29 pin30";
+    }
+    .filtro{
+        display:none;
+        visibility: hidden;
+    }
+    .contenedor-b{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .intro{
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .img-carrousel{
+        display: flex;
+        visibility: visible;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-right: 50px;
+    }
+    .logoCentrado{
+        display: none;
+    }
+
+    .inicio{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12,300px);
+        grid-template-areas: "img1" "img11" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9" "img10" "video";
+    }
+    .flecha{
+        left: 72%
+    }
+    .pin{
+        border: none;
+    }
+    .cuadros{
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(15,200px);
+        grid-template-areas: "pin1 pin2" "pin3 pin4" "pin5 pin6" "pin7 pin8" "pin9 pin10" "pin11 pin12"  "pin13 pin14" "pin15 pin16" "pin17 pin18" "pin19 pin20" "pin21 pin22" "pin23 pin24" "pin25 pin26" "pin27 pin28" "pin29 pin30";
+    }
+    .filtro{
+        display:none;
+        visibility: hidden;
+    }
+    .contenedor-b{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .facebook{
+        padding-left: 10%;
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .wpp{
+        padding-left: 10%;
+        font-size: 30px;
+        padding-bottom: 20px;
+
+    }
+    .instagram{
+        padding-left: 10%;
+        font-size: 30px;
+        padding-bottom: 20px;
+
+    }
+    .mail{
+        padding-left: 10%;
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    .redes a{
+        font-size: 18px;
+    }
+    .contactame{
+        font-size: 30px;
+    }
+    .intro{
+        width: 250px;
+    }
+
+}
