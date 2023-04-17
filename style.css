@@ -11,10 +11,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.navbar {
-  color: white;
-}
-
 .navbar-nav {
   width: 100%;
   font-size: 20px;
@@ -55,16 +51,17 @@ html {
   color: black;
   border: none;
 }
+.contenedor-b .img-carrousel {
+  display: none;
+  visibility: hidden;
+}
+.contenedor-b .img-carrousel .logomobile {
+  display: flex;
+  width: 150px;
+}
 
 .logoCentrado {
   width: 140px;
-}
-
-.flecha {
-  width: 80px;
-  position: fixed;
-  top: 90%;
-  left: 91%;
 }
 
 .gra {
@@ -81,26 +78,6 @@ html {
   text-align: justify;
 }
 
-.formulario {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  margin-left: 40%;
-  margin-bottom: 5%;
-}
-
-.cont {
-  color: rgb(14, 172, 172);
-  margin-left: 10%;
-}
-
-#boton {
-  background-color: rgb(14, 172, 172);
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  margin-left: 13%;
-  border-style: dashed;
-}
-
 footer {
   text-align: center;
   font-size: 18px;
@@ -109,6 +86,12 @@ footer {
   font-family: "Josefin Slab", serif;
   color: black;
 }
+footer .flecha {
+  width: 80px;
+  position: fixed;
+  top: 90%;
+  left: 91%;
+}
 
 .redes a {
   font-size: 25px;
@@ -116,26 +99,22 @@ footer {
   padding-top: 40px;
   font-family: "Josefin Slab", serif;
 }
-
-.instagram {
+.redes a .instagram {
   font-size: 80px;
   color: #854898;
   padding-left: 50%;
 }
-
-.mail {
+.redes a .mail {
   color: #bd192c;
   padding-left: 60%;
   font-size: 55px;
 }
-
-.wpp {
+.redes a .wpp {
   font-size: 65px;
   color: forestgreen;
   padding-left: 30%;
 }
-
-.facebook {
+.redes a .facebook {
   font-size: 70px;
   color: #143460;
   padding-left: 20%;
@@ -149,91 +128,115 @@ footer {
   grid-template-rows: repeat(5, 220px);
   grid-template-areas: "img7 img7 img6 img9 video" "img7 img7 img2 img2 video" "img1 img3 img4 img5 img5" " img1 img8 img8 img5 img5" "img11 img8 img8 img10 img10";
 }
-
-.img {
+.inicio .img {
   background-size: cover;
   background-position: center;
 }
-
-.img1 {
+.inicio .img1 {
   background-image: url(../img/inicio/uno.jpeg);
   grid-area: img1;
   width: 100%;
 }
-
-.img2 {
+.inicio .img2 {
   background-image: url(../img/inicio/dos.jpeg);
   grid-area: img2;
   width: 100%;
 }
-
-.img3 {
+.inicio .img3 {
   background-image: url(../img/inicio/tres.jpeg);
   grid-area: img3;
   width: 100%;
 }
-
-.img4 {
+.inicio .img4 {
   background-image: url(../img/inicio/cuatro.jpeg);
   grid-area: img4;
   width: 100%;
 }
-
-.img5 {
+.inicio .img5 {
   background-image: url(../img/inicio/cinco.jpeg);
   grid-area: img5;
   width: 100%;
 }
-
-.img6 {
+.inicio .img6 {
   background-image: url(../img/inicio/seis.jpeg);
   grid-area: img6;
   width: 100%;
 }
-
-.img7 {
+.inicio .img7 {
   background-image: url(../img/inicio/siete.jpeg);
   grid-area: img7;
   width: 100%;
 }
-
-.img8 {
+.inicio .img8 {
   background-image: url(../img/inicio/ocho.jpeg);
   grid-area: img8;
   width: 100%;
 }
-
-.img9 {
+.inicio .img9 {
   background-image: url(../img/inicio/nueve.jpeg);
   grid-area: img9;
   width: 100%;
 }
-
-.img10 {
+.inicio .img10 {
   background-image: url(../img/inicio/diez.jpeg);
   grid-area: img10;
   width: 100%;
 }
-
-.img11 {
+.inicio .img11 {
   background-image: url(../img/inicio/once.jpeg);
   grid-area: img11;
   width: 100%;
 }
-
-.img12 {
+.inicio .img12 {
   background-image: url(../img/inicio/doce.jpeg);
   grid-area: img12;
   width: 100%;
 }
-
-.video {
+.inicio .video {
   grid-area: video;
   width: 100%;
   height: 100%;
 }
 
-.grillacolores {
+.cuadros {
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 150px;
+  grid-template-rows: repeat(10, 400px);
+  grid-template-areas: "pin1 pin2 pin3 filtro" "pin4 pin5 pin6 filtro" "pin7 pin8 pin9 filtro" "pin10 pin11 pin12  filtro" "pin13 pin14 pin15 filtro" "pin16 pin17 pin18 filtro" "pin19 pin20 pin21 filtro" "pin22 pin23 pin24 filtro" "pin25 pin26 pin27 filtro" "pin28 pin29 pin30 filtro";
+}
+.cuadros .filtro {
+  padding-left: 40px;
+  grid-area: filtro;
+}
+.cuadros .filtro .grillatextos {
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns: 30px;
+  grid-template-rows: repeat(4, 30px);
+  grid-template-areas: "ojo" "todo" "urbano" "abstracto";
+  gap: 15px;
+}
+.cuadros .filtro .grillatextos .ojo {
+  width: 25px;
+  margin-left: 15px;
+  grid-area: ojo;
+}
+.cuadros .filtro .grillatextos .texto {
+  font-size: 16px;
+  font-family: "Josefin Slab", serif;
+  /* text-align: center; */
+}
+.cuadros .filtro .grillatextos .todo {
+  font-size: 22px;
+  margin-top: 10px;
+}
+.cuadros .filtro .grillatextos .urbano {
+  margin-top: 18px;
+}
+.cuadros .filtro .grillacolores {
   margin: 0;
   width: auto;
   height: auto;
@@ -245,322 +248,236 @@ footer {
   -moz-column-gap: 15px;
        column-gap: 15px;
 }
-
-.colores {
+.cuadros .filtro .grillacolores .colores {
   background-size: cover;
   background-position: center;
 }
-
-.azul {
+.cuadros .filtro .grillacolores .azul {
   background-image: url(../img/pinceladas/Captura\ de\ pantalla\ \(43\).png);
   grid-area: azul;
   width: 100%;
 }
-
-.rojo {
+.cuadros .filtro .grillacolores .rojo {
   background-image: url(../img/pinceladas/Captura\ de\ pantalla\ \(44\).png);
   grid-area: rojo;
   width: 100%;
 }
-
-.violeta {
+.cuadros .filtro .grillacolores .violeta {
   background-image: url(../img/pinceladas/Captura\ de\ pantalla\ \(45\).png);
   grid-area: violeta;
   width: 100%;
 }
-
-.gris {
+.cuadros .filtro .grillacolores .gris {
   background-image: url(../img/pinceladas/Captura\ de\ pantalla\ \(46\).png);
   grid-area: gris;
   width: 100%;
 }
-
-.negro {
+.cuadros .filtro .grillacolores .negro {
   background-image: url(../img/pinceladas/Captura\ de\ pantalla\ \(47\).png);
   grid-area: negro;
   width: 100%;
 }
-
-.blanco {
+.cuadros .filtro .grillacolores .blanco {
   background-image: url(../img/pinceladas/Captura\ de\ pantalla\ \(48\).png);
   grid-area: blanco;
   width: 100%;
 }
-
-.verde {
+.cuadros .filtro .grillacolores .verde {
   background-image: url(../img/pinceladas/Captura\ de\ pantalla\ \(49\).png);
   grid-area: verde;
   width: 100%;
 }
-
-.rosa {
+.cuadros .filtro .grillacolores .rosa {
   background-image: url(../img/pinceladas/Captura\ de\ pantalla\ \(50\).png);
   grid-area: rosa;
   width: 100%;
 }
-
-.grillatextos {
-  width: auto;
-  height: auto;
-  display: grid;
-  grid-template-columns: 30px;
-  grid-template-rows: repeat(4, 30px);
-  grid-template-areas: "ojo" "todo" "urbano" "abstracto";
-  gap: 15px;
-}
-
-.ojo {
-  width: 25px;
-  margin-left: 15px;
-  grid-area: ojo;
-}
-
-.texto {
-  font-size: 16px;
-  font-family: "Josefin Slab", serif;
-  /* text-align: center; */
-}
-
-.todo {
-  font-size: 22px;
-  margin-top: 10px;
-}
-
-.urbano {
-  margin-top: 18px;
-}
-
-.filtro {
-  padding-left: 40px;
-  grid-area: filtro;
-}
-
-.cuadros {
-  width: auto;
-  height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 150px;
-  grid-template-rows: repeat(10, 400px);
-  grid-template-areas: "pin1 pin2 pin3 filtro" "pin4 pin5 pin6 filtro" "pin7 pin8 pin9 filtro" "pin10 pin11 pin12  filtro" "pin13 pin14 pin15 filtro" "pin16 pin17 pin18 filtro" "pin19 pin20 pin21 filtro" "pin22 pin23 pin24 filtro" "pin25 pin26 pin27 filtro" "pin28 pin29 pin30 filtro";
-}
-
-.pin {
+.cuadros .pin {
   background-size: cover;
   background-position: center;
   border: 20px solid;
 }
-
-.pin1 {
+.cuadros .pin1 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.02.jpeg);
   width: 100%;
   grid-area: pin1;
   border-color: #C84C47;
 }
-
-.pin2 {
+.cuadros .pin2 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.02\ \(1\).jpeg);
   width: 100%;
   grid-area: pin2;
   border-color: #5A4A6F;
 }
-
-.pin3 {
+.cuadros .pin3 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.03.jpeg);
   width: 100%;
   grid-area: pin3;
   border-color: #9D6F74;
 }
-
-.pin4 {
+.cuadros .pin4 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.03\ \(1\).jpeg);
   width: 100%;
   grid-area: pin4;
   border-color: #64B2B9;
 }
-
-.pin5 {
+.cuadros .pin5 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.03\ \(2\).jpeg);
   width: 100%;
   grid-area: pin5;
   border-color: #6C3533;
 }
-
-.pin6 {
+.cuadros .pin6 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10.jpeg);
   width: 100%;
   grid-area: pin6;
   border-color: #418777;
 }
-
-.pin7 {
+.cuadros .pin7 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10\ \(1\).jpeg);
   width: 100%;
   grid-area: pin7;
   border-color: #621A38;
 }
-
-.pin8 {
+.cuadros .pin8 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10\ \(2\).jpeg);
   width: 100%;
   grid-area: pin8;
   border-color: #A3A3A1;
 }
-
-.pin9 {
+.cuadros .pin9 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10\ \(3\).jpeg);
   width: 100%;
   grid-area: pin9;
   border-color: #E5CDA1;
 }
-
-.pin10 {
+.cuadros .pin10 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10\ \(4\).jpeg);
   width: 100%;
   grid-area: pin10;
   border-color: #33728E;
 }
-
-.pin11 {
+.cuadros .pin11 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10\ \(5\).jpeg);
   width: 100%;
   grid-area: pin11;
   border-color: #F33103;
 }
-
-.pin12 {
+.cuadros .pin12 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.10\ \(6\).jpeg);
   width: 100%;
   grid-area: pin12;
   border-color: #A6C177;
 }
-
-.pin13 {
+.cuadros .pin13 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11.jpeg);
   width: 100%;
   grid-area: pin13;
   border-color: #C69BA4;
 }
-
-.pin14 {
+.cuadros .pin14 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(10\).jpeg);
   width: 100%;
   grid-area: pin14;
   border-color: #0CBAC3;
 }
-
-.pin15 {
+.cuadros .pin15 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(11\).jpeg);
   width: 100%;
   grid-area: pin15;
   border-color: #6D2421;
 }
-
-.pin16 {
+.cuadros .pin16 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(12\).jpeg);
   width: 100%;
   grid-area: pin16;
   border-color: #854898;
 }
-
-.pin17 {
+.cuadros .pin17 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(1\).jpeg);
   width: 100%;
   grid-area: pin17;
   border-color: #0E3459;
 }
-
-.pin18 {
+.cuadros .pin18 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(2\).jpeg);
   width: 100%;
   grid-area: pin18;
   border-color: #B8C2BA;
 }
-
-.pin19 {
+.cuadros .pin19 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(3\).jpeg);
   width: 100%;
   grid-area: pin19;
   border-color: #304357;
 }
-
-.pin20 {
+.cuadros .pin20 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(4\).jpeg);
   width: 100%;
   grid-area: pin20;
   border-color: #438E75;
 }
-
-.pin21 {
+.cuadros .pin21 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(5\).jpeg);
   width: 100%;
   grid-area: pin21;
   border-color: #767489;
 }
-
-.pin22 {
+.cuadros .pin22 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(6\).jpeg);
   width: 100%;
   grid-area: pin22;
   border-color: #8CC2CE;
 }
-
-.pin23 {
+.cuadros .pin23 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(7\).jpeg);
   width: 100%;
   grid-area: pin23;
   border-color: #902422;
 }
-
-.pin24 {
+.cuadros .pin24 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(8\).jpeg);
   width: 100%;
   grid-area: pin24;
   border-color: #8E888C;
 }
-
-.pin25 {
+.cuadros .pin25 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.11\ \(9\).jpeg);
   width: 100%;
   grid-area: pin25;
   border-color: #143460;
 }
-
-.pin26 {
+.cuadros .pin26 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.12.jpeg);
   width: 100%;
   grid-area: pin26;
   border-color: #871C28;
 }
-
-.pin27 {
+.cuadros .pin27 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.12\ \(1\).jpeg);
   width: 100%;
   grid-area: pin27;
   border-color: #A4AD49;
 }
-
-.pin28 {
+.cuadros .pin28 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.12\ \(2\).jpeg);
   width: 100%;
   grid-area: pin28;
   border-color: #9B4560;
 }
-
-.pin29 {
+.cuadros .pin29 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.12\ \(3\).jpeg);
   width: 100%;
   grid-area: pin29;
   border-color: #DFE0D8;
 }
-
-.pin30 {
+.cuadros .pin30 {
   background-image: url(../img/pinceladas/cuadros/WhatsApp\ Image\ 2023-03-02\ at\ 18.14.12\ \(4\).jpeg);
   width: 100%;
   grid-area: pin30;
   border-color: #6AA2A1;
 }
-
-.vacio {
+.cuadros .vacio {
   width: 100%;
   grid-area: vacio;
   border: none;
@@ -656,16 +573,6 @@ footer {
   grid-template-areas: "pin1 pin3 pin7 filtro" "pin8 pin13 pin17 filtro" "pin19 pin28 pin29 filtro";
 }
 
-.img-carrousel {
-  display: none;
-  visibility: hidden;
-}
-
-.logomobile {
-  display: flex;
-  width: 150px;
-}
-
 .fa-solid, .fas {
   font-size: 35px;
 }
@@ -727,14 +634,6 @@ footer {
   .flecha {
     left: 85%;
   }
-  .img-carrousel {
-    display: flex;
-    visibility: visible;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding-right: 50px;
-  }
   .logoCentrado {
     display: none;
   }
@@ -746,7 +645,7 @@ footer {
     grid-template-rows: repeat(15, 350px);
     grid-template-areas: "pin1 pin2" "pin3 pin4" "pin5 pin6" "pin7 pin8" "pin9 pin10" "pin11 pin12" "pin13 pin14" "pin15 pin16" "pin17 pin18" "pin19 pin20" "pin21 pin22" "pin23 pin24" "pin25 pin26" "pin27 pin28" "pin29 pin30";
   }
-  .filtro {
+  .cuadros .filtro {
     display: none;
     visibility: hidden;
   }
@@ -756,24 +655,32 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  .facebook {
-    padding-left: 10%;
-    font-size: 40px;
-  }
-  .wpp {
-    padding-left: 10%;
-    font-size: 40px;
-  }
-  .instagram {
-    padding-left: 10%;
-    font-size: 40px;
-  }
-  .mail {
-    padding-left: 10%;
-    font-size: 40px;
+  .contenedor-b .img-carrousel {
+    display: flex;
+    visibility: visible;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
   }
   .redes a {
     font-size: 25px;
+  }
+  .redes a .facebook {
+    padding-left: 10%;
+    font-size: 40px;
+  }
+  .redes a .wpp {
+    padding-left: 10%;
+    font-size: 40px;
+  }
+  .redes a .instagram {
+    padding-left: 10%;
+    font-size: 40px;
+  }
+  .redes a .mail {
+    padding-left: 10%;
+    font-size: 40px;
   }
   .contactame {
     font-size: 40px;
@@ -783,14 +690,6 @@ footer {
   }
 }
 @media only screen and (max-width: 576px) {
-  .img-carrousel {
-    display: flex;
-    visibility: visible;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding-right: 50px;
-  }
   .logoCentrado {
     display: none;
   }
@@ -810,7 +709,7 @@ footer {
     grid-template-rows: repeat(15, 300px);
     grid-template-areas: "pin1 pin2" "pin3 pin4" "pin5 pin6" "pin7 pin8" "pin9 pin10" "pin11 pin12" "pin13 pin14" "pin15 pin16" "pin17 pin18" "pin19 pin20" "pin21 pin22" "pin23 pin24" "pin25 pin26" "pin27 pin28" "pin29 pin30";
   }
-  .filtro {
+  .cuadros .filtro {
     display: none;
     visibility: hidden;
   }
@@ -819,12 +718,7 @@ footer {
     width: 100%;
     justify-content: space-between;
   }
-  .intro {
-    width: 350px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .img-carrousel {
+  .contenedor-b .img-carrousel {
     display: flex;
     visibility: visible;
     width: 100%;
@@ -832,6 +726,11 @@ footer {
     align-items: center;
     padding-right: 50px;
   }
+  .intro {
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 480px) {
   .logoCentrado {
     display: none;
   }
@@ -843,9 +742,6 @@ footer {
   .flecha {
     left: 72%;
   }
-  .pin {
-    border: none;
-  }
   .cuadros {
     width: auto;
     height: auto;
@@ -854,37 +750,48 @@ footer {
     grid-template-rows: repeat(15, 200px);
     grid-template-areas: "pin1 pin2" "pin3 pin4" "pin5 pin6" "pin7 pin8" "pin9 pin10" "pin11 pin12" "pin13 pin14" "pin15 pin16" "pin17 pin18" "pin19 pin20" "pin21 pin22" "pin23 pin24" "pin25 pin26" "pin27 pin28" "pin29 pin30";
   }
-  .filtro {
+  .cuadros .filtro {
     display: none;
     visibility: hidden;
+  }
+  .cuadros .pin {
+    border: none;
   }
   .contenedor-b {
     display: flex;
     width: 100%;
     justify-content: space-between;
   }
-  .facebook {
-    padding-left: 10%;
-    font-size: 30px;
-    padding-bottom: 20px;
-  }
-  .wpp {
-    padding-left: 10%;
-    font-size: 30px;
-    padding-bottom: 20px;
-  }
-  .instagram {
-    padding-left: 10%;
-    font-size: 30px;
-    padding-bottom: 20px;
-  }
-  .mail {
-    padding-left: 10%;
-    font-size: 25px;
-    padding-bottom: 20px;
+  .contenedor-b .img-carrousel {
+    display: flex;
+    visibility: visible;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
   }
   .redes a {
     font-size: 18px;
+  }
+  .redes a .facebook {
+    padding-left: 10%;
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  .redes a .wpp {
+    padding-left: 10%;
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  .redes a .instagram {
+    padding-left: 10%;
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  .redes a .mail {
+    padding-left: 10%;
+    font-size: 25px;
+    padding-bottom: 20px;
   }
   .contactame {
     font-size: 30px;
