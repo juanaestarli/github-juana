@@ -105,7 +105,20 @@ footer {
     height: 250px;
     margin: auto;
     text-align: justify;
+    padding-top: 5%;
 }
+
+.d-flex{
+    padding-left: 35%;
+    padding-right: 35%;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(100%);
+}
+.carousel-indicators {
+    filter: invert(100%);
+}
+
 // fin-page ACERCA
 
 // inicio-page CONTACTO
@@ -874,7 +887,11 @@ footer {
         font-size: 40px;
     }
     .intro {
-        width: 400px;
+        width: 550px;
+    }
+    .d-flex{
+        padding-left: 30%;
+        padding-right: 30%;
     }
 }
 @include for-tablet-portrait {
@@ -887,7 +904,7 @@ footer {
         grid-template-areas: "img1" "img11" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9" "img10" "video";
     }
     .flecha {
-        left: 82%;
+        left: 85%;
     }
     .cuadros {
         width: auto;
@@ -941,6 +958,10 @@ footer {
             font-size: 25px;
         }
     }
+    .d-flex{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
 }
 @include for-phone{
 
@@ -953,7 +974,7 @@ footer {
         grid-template-areas: "img1" "img11" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9" "img10" "video";
     }
     .flecha {
-        left: 72%;
+        visibility: hidden;
     }
     .pin {
         border: none;
@@ -1011,7 +1032,12 @@ footer {
         font-size: 30px;
     }
     .intro {
-        width: 250px;
+        width: 300px;
     }
+    .d-flex{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
 }
 // fin-responsive
