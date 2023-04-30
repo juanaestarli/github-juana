@@ -103,35 +103,57 @@ footer {
   text-align: justify;
 }
 
-.redes a {
-  font-size: 25px;
-  padding: 5px;
-  padding-top: 40px;
-  font-family: "Josefin Slab", serif;
+.redes {
+  display: grid;
+  grid-template-columns: repeat(2, 40%);
+  grid-template-rows: repeat(2, 40%);
+  grid-template-areas: "wpp mail" "facebook instagram";
+  row-gap: 20px;
+  padding-left: 27%;
 }
 .redes .instagram {
-  font-size: 80px;
+  font-size: 40px;
   color: #854898;
-  padding-left: 50%;
+  grid-area: instagram;
+}
+.redes .instagram a {
+  font-size: 25px;
+  font-family: "Josefin Slab", serif;
+  color: black;
 }
 .redes .mail {
   color: #bd192c;
-  padding-left: 60%;
-  font-size: 55px;
+  font-size: 40px;
+  grid-area: mail;
+}
+.redes .mail a {
+  font-size: 25px;
+  font-family: "Josefin Slab", serif;
+  color: black;
 }
 .redes .wpp {
-  font-size: 65px;
+  font-size: 40px;
   color: forestgreen;
-  padding-left: 30%;
+  grid-area: wpp;
+}
+.redes .wpp a {
+  font-size: 25px;
+  font-family: "Josefin Slab", serif;
+  color: black;
 }
 .redes .facebook {
-  font-size: 70px;
+  font-size: 40px;
   color: #143460;
-  padding-left: 20%;
+  grid-area: facebook;
+}
+.redes .facebook a {
+  font-size: 25px;
+  font-family: "Josefin Slab", serif;
+  color: black;
 }
 
 .backcont {
-  background-image: url(../img/fondo.jpg);
+  background-image: url(../img/fondo.jpeg);
   background-size: cover;
   background-position: center;
 }
@@ -666,7 +688,7 @@ footer {
   grid-template-areas: "pin1 pin3 pin7 filtro" "pin8 pin13 pin17 filtro" "pin19 pin28 pin29 filtro";
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1160px) {
   .inicio {
     width: 100%;
     height: auto;
@@ -691,6 +713,14 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 150px;
     grid-template-rows: repeat(10, 320px);
     grid-template-areas: "pin1 pin2 pin3 filtro" "pin4 pin5 pin6 filtro" "pin7 pin8 pin9 filtro" "pin10 pin11 pin12  filtro" "pin13 pin14 pin15 filtro" "pin16 pin17 pin18 filtro" "pin19 pin20 pin21 filtro" "pin22 pin23 pin24 filtro" "pin25 pin26 pin27 filtro" "pin28 pin29 pin30 filtro";
+  }
+  .redes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    grid-template-areas: "wpp" "mail" "facebook" "instagram";
+    row-gap: 20px;
+    padding-left: 20%;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -731,24 +761,32 @@ footer {
     align-items: center;
     padding-right: 50px;
   }
+  .gra {
+    width: 65%;
+    padding-left: 35%;
+  }
+  .redes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    grid-template-areas: "wpp" "mail" "facebook" "instagram";
+    row-gap: 20px;
+    padding-left: 20%;
+  }
   .redes a {
     font-size: 25px;
   }
   .redes .facebook {
-    padding-left: 10%;
-    font-size: 40px;
+    font-size: 30px;
   }
   .redes .wpp {
-    padding-left: 10%;
-    font-size: 40px;
+    font-size: 30px;
   }
   .redes .instagram {
-    padding-left: 10%;
-    font-size: 40px;
+    font-size: 30px;
   }
   .redes .mail {
-    padding-left: 10%;
-    font-size: 40px;
+    font-size: 30px;
   }
   .contactame {
     font-size: 40px;
@@ -797,6 +835,30 @@ footer {
   .intro {
     width: 350px;
   }
+  .gra {
+    width: 65%;
+    padding-left: 35%;
+  }
+  .redes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    grid-template-areas: "wpp" "mail" "facebook" "instagram";
+    row-gap: 20px;
+    padding-left: 5%;
+  }
+  .redes .facebook {
+    font-size: 25px;
+  }
+  .redes .wpp {
+    font-size: 25px;
+  }
+  .redes .instagram {
+    font-size: 25px;
+  }
+  .redes .mail {
+    font-size: 25px;
+  }
 }
 @media only screen and (max-width: 480px) {
   .logoCentrado {
@@ -838,28 +900,29 @@ footer {
     align-items: center;
     padding-right: 50px;
   }
-  .redes a {
-    font-size: 18px;
+  .gra {
+    width: 70%;
+    padding-left: 30%;
+  }
+  .redes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    grid-template-areas: "wpp" "mail" "facebook" "instagram";
+    row-gap: 20px;
+    padding-left: 5%;
   }
   .redes .facebook {
-    padding-left: 10%;
-    font-size: 30px;
-    padding-bottom: 20px;
+    font-size: 25px;
   }
   .redes .wpp {
-    padding-left: 10%;
-    font-size: 30px;
-    padding-bottom: 20px;
+    font-size: 25px;
   }
   .redes .instagram {
-    padding-left: 10%;
-    font-size: 30px;
-    padding-bottom: 20px;
+    font-size: 25px;
   }
   .redes .mail {
-    padding-left: 10%;
     font-size: 25px;
-    padding-bottom: 20px;
   }
   .contactame {
     font-size: 30px;
