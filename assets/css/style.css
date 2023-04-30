@@ -121,6 +121,15 @@ footer {
   font-family: "Josefin Slab", serif;
   color: black;
 }
+.redes .instagram a:link {
+  text-decoration: none;
+}
+.redes .instagram a:visited {
+  text-decoration: none;
+}
+.redes .instagram a:hover {
+  color: #854898;
+}
 .redes .mail {
   color: #bd192c;
   font-size: 40px;
@@ -130,6 +139,15 @@ footer {
   font-size: 25px;
   font-family: "Josefin Slab", serif;
   color: black;
+}
+.redes .mail a:link {
+  text-decoration: none;
+}
+.redes .mail a:visited {
+  text-decoration: none;
+}
+.redes .mail a:hover {
+  color: #bd192c;
 }
 .redes .wpp {
   font-size: 40px;
@@ -141,6 +159,15 @@ footer {
   font-family: "Josefin Slab", serif;
   color: black;
 }
+.redes .wpp a:link {
+  text-decoration: none;
+}
+.redes .wpp a:visited {
+  text-decoration: none;
+}
+.redes .wpp a:hover {
+  color: forestgreen;
+}
 .redes .facebook {
   font-size: 40px;
   color: #143460;
@@ -150,6 +177,15 @@ footer {
   font-size: 25px;
   font-family: "Josefin Slab", serif;
   color: black;
+}
+.redes .facebook a:link {
+  text-decoration: none;
+}
+.redes .facebook a:visited {
+  text-decoration: none;
+}
+.redes .facebook a:hover {
+  color: #143460;
 }
 
 .backcont {
@@ -772,9 +808,6 @@ footer {
     grid-template-areas: "wpp" "mail" "facebook" "instagram";
     row-gap: 20px;
     padding-left: 20%;
-  }
-  .redes a {
-    font-size: 25px;
   }
   .redes .facebook {
     font-size: 30px;

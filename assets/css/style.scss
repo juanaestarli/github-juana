@@ -118,6 +118,15 @@ footer {
             font-size: 25px;
             font-family: "Josefin Slab", serif;
             color: black;
+            &:link {
+                text-decoration: none;
+            }
+            &:visited {
+                text-decoration: none;
+            }
+            &:hover{
+                color: #854898;
+            }
             }
     }
     
@@ -129,6 +138,15 @@ footer {
             font-size: 25px;
             font-family: "Josefin Slab", serif;
             color: black;
+            &:link {
+                text-decoration: none;
+            }
+            &:visited {
+                text-decoration: none;
+            }
+            &:hover{
+                color: #bd192c;
+            }
             }
     }
     
@@ -140,6 +158,15 @@ footer {
             font-size: 25px;
             font-family: "Josefin Slab", serif;
             color: black;
+            &:link {
+                text-decoration: none;
+            }
+            &:visited {
+                text-decoration: none;
+            }
+            &:hover{
+                color: forestgreen;
+            }
             }
     }
     
@@ -151,6 +178,15 @@ footer {
             font-size: 25px;
             font-family: "Josefin Slab", serif;
             color: black;
+            &:link {
+                text-decoration: none;
+            }
+            &:visited {
+                text-decoration: none;
+            }
+            &:hover{
+                color: #143460;
+            }
             }
     }
     display: grid;
@@ -820,10 +856,6 @@ footer {
         grid-template-areas: "wpp" "mail" "facebook" "instagram";
         row-gap: 20px;
         padding-left: 20%;
-    
-        a {
-            font-size: 25px;
-        }
         .facebook {
             font-size: 30px;
         }
