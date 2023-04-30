@@ -925,6 +925,7 @@ footer {
     grid-template-areas: "img1" "img11" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9" "img10" "video";
   }
   .flecha {
+    display: none;
     visibility: hidden;
   }
   .pin {
@@ -984,6 +985,7 @@ footer {
   }
   .intro {
     width: 300px;
+    text-align: center;
   }
   .d-flex {
     padding-left: 20%;
